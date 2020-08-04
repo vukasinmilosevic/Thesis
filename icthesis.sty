@@ -11,10 +11,11 @@
 \def\maketitle{
   \begin{titlepage}{
     %\linespread{1.5}
-    \Large University of London \\
     %\linebreak
+    \Large
     Imperial College of Science, Technology and Medicine \\
     %\linebreak
+    \Large
     Department of Physics
     \rm
     \vskip 3in
@@ -27,9 +28,7 @@
   \par
   Submitted in part fulfilment of the requirements for the degree of 
   \linebreak
-  Doctor of Philosophy in Physics of the University of London and 
-  \linebreak
-  the Diploma of Imperial College, \@submitdate
+  Doctor of Philosophy in Physics of the Imperial College London, \@submitdate
   \vfil
   \end{titlepage}
 }
@@ -98,7 +97,10 @@
 \def\body{
     \cleardoublepage    
     \pagestyle{uheadings}
+    \renewcommand{\baselinestretch}{0.75}\normalsize
     \tableofcontents
+    \renewcommand{\baselinestretch}{1}\normalsize
+   % \tableofcontents
     \pagestyle{plain}
     \cleardoublepage
     \pagestyle{uheadings}
