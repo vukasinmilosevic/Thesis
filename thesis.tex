@@ -1,42 +1,278 @@
 
 \documentclass[a4paper,12pt,twoside]{report}
-\usepackage[left=2cm,right=2cm,top=2cm,bottom=3cm]{geometry}
+%\documentclass[a4paper,11pt,twoside]{memoir}
+
+
+%cite package
+%\usepackage{cite}
+
+\usepackage{tikz}
+\usepackage{amsmath}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{textgreek}
+\usepackage{float}
+\usepackage{graphicx}
+
+
+%\usepackage[square,numbers]{natbib}
+%\usepackage[backend=biber]{biblatex}
+
+\usepackage[dashed=false,
+backend=biber,
+style=ieee,
+bibencoding=ascii,
+sortcites=true,
+citestyle=numeric-comp
+%style=alphabetic
+%style=reading
+]{biblatex}
+
+%BIBTEX URL BREAK
+\setcounter{biburllcpenalty}{7000}
+\setcounter{biburlucpenalty}{7000}
+\setcounter{biburlnumpenalty}{7000}
+
+%Appendix package
+\usepackage[title]{appendix}
+%Sideways table package
+\usepackage{rotating}
+
+%\usepackage[backend=biber,style=ieee,natbib=true]{biblatex} 
+
+\addbibresource{bibliography/bibliography.bib}
+
+%%%%CMS AN subfigures%%%%%%%%%
+\usepackage{fancyhdr}%        modern version of fancyheadings
+\usepackage{subfig}%
+\let\subfigure\subfloat% compatibility between subfigure and subfig packages
+
+%\usepackage[left=2cm,right=2cm,top=2cm,bottom=3cm]{geometry}
+\usepackage[a4paper, width=150mm, top=25mm, bottom=25mm]{geometry} % -- use for printing
+%\usepackage[top=2.5cm, bottom=1.8cm,left=4.0cm,right=1.5cm]{geometry} % --- Dwayne's
+
 
 \include{thesis.preamble}
+
+\usepackage{color}   %May be necessary if you want to color links
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=false, %set true if you want colored links
+    linktoc=all,     %set to all if you want both sections and subsections linked
+    linkcolor=blue,  %choose some color if you want links to stand out
+}
+
+% Removes two space start of a new sentence
+%\frenchspacing
+% Returns to one
+%chapter ornaments test
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{lmodern}
+\usepackage{tikz}
+\usepackage{pgfornament}
+\usetikzlibrary{calc}
+\usepackage{setspace}
+%\usepackage{ebgaramond}
+
+%%%%%%%%%%%%%%%%LINE NUMBERING%%%%%%%%%%%%%%%%%%
+\usepackage{lineno}
+%\linenumbers
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%CMS AN FONT%%%%%%%%%%%%%%%%
+%\usepackage{palatino}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%CMS AN FONT%%%%%%%%%%%%%%%%
+
+
+
+
+
+
+%Styling test
+\usepackage{fancyhdr}
+\usepackage{lettrine}
+\input Acorn.fd
+\newcommand*\initfamily{\usefont{U}{Acorn}{xl}{n}}
+%Test end
+
+%Quotes
+\usepackage{epigraph}
+%\epigraphfontsize{\small\itshape}
+\setlength\epigraphwidth{8cm}
+%\setlength\epigraphwidth{.8\textwidth}
+\setlength\epigraphrule{0pt}
+
+%\normallinespacing
+\mediumlinespacing
+%\doubleinespacing
+
+%CHAPTER STYLE
+
+
+
+
+%old working setup
+%\bibliography{bibliography/bibliography}
+
+%DEFINE COMMANDS - MATH
+
+\newcommand{\MET}{$E_{T,miss}$}
+\newcommand{\METnolep}{$E_{T,miss}^{no, l}$}
+\newcommand{\METnomu}{$E_{T,miss}^{no, \mu}$}
+\newcommand{\METnoe}{$E_{T,miss}^{no, e}$}
+\newcommand{\mindphi}{$min\Delta\phi(j,E_{T,miss})$}
+\newcommand{\mindphinolep}{$min\Delta\phi(j,E_{T,miss}^{no, l})$}
+\newcommand{\mindphinomu}{$min\Delta\phi(j,E_{T,miss}^{no, \mu})$}
+\newcommand{\mindphinoe}{$min\Delta\phi(j,E_{T,miss}^{no, e})$}
+
+%Define checkmark
+\def\checkmark{\tikz\fill[scale=0.4](0,.35) -- (.25,0) -- (1,.7) -- (.25,.15) -- cycle;} 
 
 
 \begin{document}
 
-\title{\LARGE {\bf Search for Dark Matter in Vector Boson Fusion production at the LHC}\\
+
+\title{\Large {\bf Search for invisible decays of the Higgs boson at $\sqrt{s}$ = 13~TeV}\\
  \vspace*{6mm}
 }
 
-\author{Vuka\v sin Milo\v sevi\' c}
-\submitdate{March 2020}
+\author{\large Vuka\v sin Milo\v sevi\' c}
+\submitdate{August 2020}
 
-\normallinespacing
+
+
 \maketitle
-
 \preface
+
 \input{abstract/abstract}
 \input{acknowledgements/acknowledgements}
 \input{dedication/dedication}
 \input{quotes/quotes}
 
 \body
-\input{introduction/introduction}
-\input{background/background}
 
+
+%\part[The Idea]{The Idea \\
+%%                  \begin{center}
+ %                    \begin{minipage}[l]{11cm}
+ %%                     \textnormal{\normalsize **Proba kako izgleda**}
+  %                   \end{minipage}
+  %                    \end{center}}
+                 
+%\part[The Idea]{ \begin{center}
+%                   \begin{minipage}{1.0\textwidth}
+%                     \begin{tikzpicture}[remember picture, overlay]
+%%                        \node[inner sep=6pt] (chapter) at (current page.center){\Huge The Experiment};
+ %                       \node[inner sep=12pt, below of=chapter, text width=10cm, align=center, outer sep=12pt] (title1) {\textnormal{\large \textit{``Bez alata nema zanata."}}};
+%                        \node[inner sep=12pt, below of=title1, text width=10cm, align=center, outer sep=6pt] (title) {\textnormal{\large-- \textup{Srpska narodna izreka} --}};
+%                     \node[anchor=north] at (title.south){\pgfornament[width=5cm]{87}};
+%                     \node[anchor=south] at (chapter.north){\pgfornament[width=3.5cm,symmetry=h]{81}};
+%                     \end{tikzpicture} 
+%                   \end{minipage}
+%                 \end{center}
+%                 }                  
+                  
+                  
+\input{introduction/introduction}
+
+  \newgeometry{left=0cm,bottom=0cm,top=0cm,right=0cm}
+  \begin{tikzpicture}[remember picture, overlay]
+  \node[inner sep=6pt] (chapter) at (current page.center){\Huge Part I: The Idea};
+  \node[inner sep=12pt, below of=chapter, text width=24cm, align=center, outer sep=12pt] (title1) {\large \textit{``Ekser dr\v zi potkov, potkov konja, konj junaka, junak grad, a grad zemlju."}};
+  \node[inner sep=12pt, below of=title1, text width=10cm, align=center, outer sep=12pt] (title) {-- \textup{Serbian proverb} --};
+  \node[anchor=north] at (title.south){\pgfornament[width=5cm]{87}};
+  \node[anchor=south] at (chapter.north){\pgfornament[width=4cm,symmetry=h]{81}};
+  \end{tikzpicture} 
+   \addcontentsline{toc}{part}{Part I: The Idea}
+ \restoregeometry
+\newpage
+
+
+%\part{The Idea}
+%\input{introduction/introduction}
+%\input{background/background}
+\input{Theory/Theory.tex}
+
+\newpage
+ \newgeometry{left=0cm,bottom=0cm,top=0cm,right=0cm}
+  \begin{tikzpicture}[remember picture, overlay]
+  \node[inner sep=6pt] (chapter) at (current page.center){\Huge Part II: The Experiment};
+  \node[inner sep=12pt, below of=chapter, text width=10cm, align=center, outer sep=12pt] (title1) {\large \textit{``Bez alata nema zanata."}};
+  \node[inner sep=12pt, below of=title1, text width=10cm, align=center, outer sep=12pt] (title) {-- \textup{Serbian proverb} --};
+  \node[anchor=north] at (title.south){\pgfornament[width=5cm]{87}};
+  \node[anchor=south] at (chapter.north){\pgfornament[width=4cm,symmetry=h]{58}};
+  \end{tikzpicture} 
+   \addcontentsline{toc}{part}{Part II: The Experiment}
+ \restoregeometry
+\newpage
+
+
+
+\input{CMS_experiment/CMS_experiment}
+
+
+
+
+
+
+\newpage
+  \newgeometry{left=0cm,bottom=0cm,top=0cm,right=0cm}
+  \begin{tikzpicture}[remember picture, overlay]
+  \node[inner sep=6pt] (chapter) at (current page.center){\Huge Part III: The Study};
+  \node[inner sep=12pt, below of=chapter, text width=10cm, align=center, outer sep=12pt] (title1) {\large \textit{``Triput meri, jednom seci."}};
+  \node[inner sep=12pt, below of=title1, text width=10cm, align=center, outer sep=12pt] (title) {-- \textup{Srpska narodna izreka} --};
+  \node[anchor=north] at (title.south){\pgfornament[width=5cm]{87}};
+  \node[anchor=south] at (chapter.north){\pgfornament[width=4cm,symmetry=h]{58}};
+  \end{tikzpicture} 
+  \addcontentsline{toc}{part}{Part III: The Study}
+ \restoregeometry
+\newpage
+
+
+
+
+\input{Objects/objects}
+\input{Analysis_strategy/Analysis_strategy}
+\input{Control_Regions/Control_Regions}
 % body of thesis comes here
 
-\input{conclusion/conclusion}
+\newpage
+\include{FIt_structure/Fit_structure}
+\newpage
+\include{Results/Results}
+\newpage
+\label{ch:combination}
+\newpage
+\include{Conclusion/Conclusion}
+\newpage
+%\input{conclusion/conclusion}
 
-\appendix
+
+
+
+
+%\appendix
+\begin{appendices}
+\chapter{}
+\input{Appendix/Appendix}
+\end{appendices}
 % appendices come here
 
 
 \addcontentsline{toc}{chapter}{Bibliography}
-\bibliographystyle{alpha}
-\bibliography{bibliography/bibliography}
+%\bibliographystyle{alpha}
+%\bibliographystyle{ieeetr}
+%\bibliographystyle{plain}
+%\bibliographystyle{unsrt}
+%\bibliographystyle{unsrtnat}
+%\bibliographystyle{abbrvnat}
+%\bibliographystyle{plainnat}
 
+
+
+
+
+%\bibliography{bibliography/bibliography}
+\printbibliography
 \end{document}
