@@ -1,6 +1,7 @@
-\chapter{Fit structure}
+\chapter{Fit structure and results}
 \label{ch:fit}
-\epigraph{\itshape``Tiny details imperceptible to us decide everything!"}{--- \textup{Winfried Georg Sebald, Vertigo}}
+%\epigraph{\itshape``Tiny details imperceptible to us decide everything!"}{--- \textup{Winfried Georg Sebald, Vertigo}}
+\epigraph{\itshape``What could I say to you that would be of value, except that perhaps you seek too much, that as a result of your seeking you cannot find. "}{--- \textup{Hermann Hesse}}
 
 \section{Introduction}
 \hspace{10pt} Before proceeding with the discussion of the final result representing this study, an overview of all analysis inputs needs to be made in order to summarise constituents entering the final measurement. The following sections are going introduce the fit strategy, presented in terms of the signal extraction approach, coupled with a general introduction to the statistical apparatus. Building on that general topic, the next item of discussion is going to be the formation of the likelihood function for the searches of the invisible state. It will be shown how it summarises the information from dedicated control regions as well as from the signal region.
@@ -24,7 +25,7 @@ where the terms comprising the product can be interpreted as the probabilities t
 \hspace{10pt} When approaching the task of setting a limit on the probability of the Higgs boson decaying invisibly, one must propose a way of thinking opposite to the case when there is a hunt for a discovery. In these scenarios, the null hypothesis ($H_0$) is represented by the signal~$+$~background scenario which is compared to the alternative ($H_1$) denoted as background only scenario (as introduced in Ref.~\cite{paper:stat_overview}). For the purposes of the VBF H$\rightarrow$inv search that would introduce the options of including the SM Higgs by fixing the values of Br(H$\rightarrow$inv) to be 1 or 0 respectively. Following from the previous definitions, the final comparison can be made by following the CLs criterion~\cite{paper:stat_overview,paper:cls_intro}, through which the value of the 95\% CL upper limit on Br(H$\rightarrow$~inv) is obtained.
 
 \hspace{10pt} This simplified method of having only one region represented with $\mu S_i+B_i$ is used to illustrate the entire process without the pressure of multiple additional background enriched regions. The details of their inclusion into the signal extraction procedure are the focal point of the following section.
-\section{Signal Extraction strategy}
+\section{Signal extraction strategy}
 \hspace{10pt} The information gathered from four lepton control regions (described in Chapter~\ref{ch:control_regions}) and the signal region (with both analysis categories being defined in Chapter~\ref{ch:an_strategy}) is used when forming of the, $m_{jj}$ binned, likelihood function. It is formed in such a way that it allows the fit to simultaneously access all available information, with the end result of having a final estimate of the contribution originating from Z$\rightarrow \nu\nu$+jets and W$\rightarrow l\nu$+jets irreducible backgrounds. The formation of the likelihood function can be split in the following way:
 
 \begin{equation}
@@ -106,16 +107,18 @@ where the definitions of transfer factors follow their dilepton counterparts. Th
 
 
 \section{Treatment of uncertainties}
-\hspace{10pt} The systematic uncertainties play a significant role for the transfer factors $f(\boldsymbol{\theta})$.  can be separated into two groups based on their origin. They can be either a result of higher order theory corrections applied on the LO simulation samples (as explained in Chapter~\ref{ch:objects}) or they can be one of the multiple experimental sources. The following sections are going to detail each of these groups while also mentioning the uncertainties associated with the simulated signal and minor SM background processes.
+\hspace{10pt} The systematic uncertainties play a significant role in these measurements and can be either a result of higher order theory corrections applied on the LO simulation samples (as explained in Chapter~\ref{ch:objects}) or they can be associated to one of multiple experimental sources. The following sections detail each of these groups.
+
 \subsection{Theoretical uncertainties}
-\hspace{10pt} The core of this group of uncertainties is represented with the effects connected to the EWK and QCD higher order corrections coupled with the uncertainty associated with the parton density function (PDF) modeling. The first item taken into consideration arises due to the variations revolving the choice of the central renormalization and factorization scale.
+\hspace{10pt} Simulated samples of the main signal processes, the VBF and ggH productions, have associated uncertainties originating from factorization, renormalization and parton density function (PDF) variations [R]. The ggH production has additional sources of uncertainty coming from limited information about the ggH+X\footnote{Where the X represents scenarios with two or more additional jets.} cross sections and the uncertainty related to the prediction of the ggH cross section for large values of $p_T^{H}$\footnote{$p_T^{H}>$~250~GeV.}. This totals to an additional 40~\% uncertainty. Lastly, due to the choice of the PDF set, uncertainty associated to the signal acceptance is treated per process.
 
-\hspace{10pt} These variations involve changing both aforementioned scales by increasing it or decreasing it by a factor of two with respect to its nominal value. As these corrections are being applied as a two dimensional weight map in generator level boson $p_T$ and $m_{jj}$ (as discussed in Section~[R]), the final uncertainties are derived through the differences between the NLO cross sections (expressed in boson $p_T$ and $m_{jj}$) corresponding to the variated and nominal scenario. Finally, the uncertainty originating from the PDF modelling is estimated through a procedure recommended by the PDF4LHC working group~[R] and combined with other sources through a squared sum.
+\hspace{10pt} Theoretical uncertainties have an effect on the transfer factors $f(\boldsymbol{\theta})$\footnote{These rest of the Z and W transfer factors they are expected to cancel out due to similar jet topological properties between the SR and respective CRs}. The core of these of uncertainties is represented with the effects connected to the EWK and QCD higher order corrections coupled with the uncertainty associated with the PDF modeling. The first item taken into consideration arises due to the variations revolving the choice of the central renormalization and factorization scale. These variations involve changing both scales by increasing or decreasing them by a factor of two with respect to its nominal value. This is reflected in the final weights being used in the analysis. These uncertainties are assumed to be partially correlated between the W and Z samples. Taking a more conservative approach when estimating their effect on the $f(\boldsymbol{\theta})$ ratios, only the W variation (as the larger contribution) is considered. These final uncertainties are used for both the EWK and QCD variations of the transfer factor $f(\boldsymbol{\theta})$.
 
-\hspace{10pt} Last item when discussing the theory uncertainties are the ones accociated to the simulated predictions of two main signal samples - ggH (where the interest laysin ggH+X\footnote{Where X = 2 or more jets} processes) and VBF production mode of the Higgs boson.
+Figure~[R] shows the uncertainties on the $f(\boldsymbol{\theta})$ transfer factor for the MTR category for the 2017 data (with the rest of the categories being represented with Figures~[A]-[A]).
+%As these corrections are being applied as a two dimensional weight map in generator level boson $p_T$ and $m_{jj}$ (as discussed in Chapter~\ref{ch:objects}), the final uncertainties are derived through the differences between the NLO cross sections (expressed in boson $p_T$ and $m_{jj}$) corresponding to the variated and nominal scenario. Finally, the uncertainty originating from the PDF modelling is estimated through a procedure recommended by the PDF4LHC working group~[R] and combined with other sources through a squared sum. 
  
 \subsection{Experimental uncertainties}
-\hspace{10pt} As a companion group to the previously defined one, the experimental uncertainties focus more on the effect arising due to the performance of the detector and the object reconstruction. Sources comprising this group include pileup re-weighting, trigger performance, jet energy corrections (both the scale and resolution) and object reconstruction and isolation criteria (expressed through the usage of selection/veto weights as explained in Section~[R]).
+\hspace{10pt} The experimental uncertainties are related to the effects of the performance of the detector and the object reconstruction. Sources comprising this group include pileup re-weighting, trigger performance, jet energy corrections (both the scale and resolution) and object reconstruction and isolation criteria (expressed through the usage of selection/veto weights as explained in Chapter~\ref{ch:objects}). Table~\ref{tab:systematics} summarises the experimental uncertainties on V+jets transfer factors, while Table~\ref{tab:systematics_minor} summarises the respective uncertainties on smaller backgrounds.
 
 
 \begin{table}[htbp]
@@ -159,3 +162,70 @@ where the definitions of transfer factors follow their dilepton counterparts. Th
     \label{tab:systematics}
         \caption{Summary of experimental uncertainties in the transfer factors between main V+jets backgrounds. Where specified in the form of a range of values, the values vary with era of data taking and between different EWK or QCD induced jets.}
 \end{table}
+
+
+\begin{table}[htbp]
+
+\small
+    \begin{center}
+       \begin{tabular}{llc}
+       \hline
+       \hline
+       Source                    & Process                                    & Uncertainty  \\
+       \hline
+       \hline
+       Electron  trigger         & $W_{SR}/W_{e\nu}$, $Z_{\nu\nu}/Z_{ee}$       & 1\% \\
+       \MET   triggers             & $W_{SR}/W_{CR}$, $Z_{\nu\nu}/Z_{CR}$, $Z/W$, signal & 2\% \\
+       VBF  triggers             & signal  & 10\% \\
+%       Photon  trigger           & $Z_{\nu\nu}/\gamma$                           & 1\% \\
+       \hline
+       Muon-ID   efficiency      & $W_{SR}/W_{\mu\nu}$, $Z_{\nu\nu}/Z_{\mu\mu}$ & 0.5\% (per leg) \\
+       Muon-Iso   efficiency     & $W_{SR}/W_{\mu\nu}$, $Z_{\nu\nu}/Z_{\mu\mu}$ & 0.1\% (per leg) \\
+       Electron-reco efficiency  & $W_{SR}/W_{e\nu}$, $Z_{\nu\nu}/Z_{ee}$       & 0.5\% (per leg) \\
+       Electron-IDiso efficiency & $W_{SR}/W_{e\nu}$, $Z_{\nu\nu}/Z_{ee}$       & 3\% (per leg) \\
+ %      Photon-IDiso efficiency   & $Z_{\nu\nu}/\gamma$       & 5\% \\
+      \hline
+      Electron veto from reco &  $W_{l,SR}$, $Z/W$  & 1\% (QCD), 1.5\% (EW)\\
+      Electron veto from idiso &  $W_{l,SR}$, $Z/W$  & 3\% \\
+      Muon veto &  $W_{l,SR}$, $Z/W$  & 0.5\% \\
+      Tau veto &  $W_{l,SR}$, $Z/W$  & 1\% \\
+      \hline
+       \multirow{4}{*}{Jet energy scale}         & $Z/W$         & 1--2\%\\
+                                & $W_{CR}/W_{SR}$               & 1.0--1.5\% \\
+                               	& $Z_{CR}/Z_{\nu\nu}$   		& 1\% \\
+ %                              	& $Z_{\nu\nu}/\gamma$	    	& 3\% \\\hline
+       \multirow{4}{*}{Jet energy resolution}  	& $Z/W$         & 1.0--2.5\% \\ 
+                                & $W_{CR}/W_{SR}$               & 1.0--1.5\% \\
+                                & $Z_{CR}/Z_{SR}$				& 1\% \\
+ %                               & $Z_{\nu\nu}/\gamma$	    	& 1--4\% \\
+       \hline
+       %pileup & all ratios & 1\% \\
+      \end{tabular}
+    \end{center}
+    \label{tab:systematics}
+        \caption{Summary of experimental uncertainties in the transfer factors between smaller backgrounds. Where specified in the form of a range of values (PLACEHOLDER).}
+\end{table}
+
+\section{QCD estimation}
+
+
+\newpage
+
+\section{Results}
+
+\hspace{10pt} The signal extraction procedure introduced in previous sections is applied to all regions simultaneously. This section summarises the final results, expressed in terms of the 95~\% CL upper limit on Br(H$\rightarrow$~inv)\footnote{As no significant deviations from the SM have been observed.} for all analysis categories. In order to formulate a preliminary look at the combined Run 2 (or the "legacy") result, a combination is performed with the studies targeting the 2016 data without re-analysing the data (being explained in great detail in Refs. [R,R]). Treatment of most important nuisance parameters, such as the ones related to lepton efficiencies, have been left uncorrelated between the three years with the uncertainties assigned to the jet energy scale and resolution also following the uncorrelated path. A correlation between theory uncertainty has been established between 2017 and 2018 (although they differ between MTR and VTR categories). The addition of the photon region has been performed for the MTR category for the 2017 and 2018 eras of data taking.
+
+\hspace{10pt} Starting with the main analysis category, Figures~[R]-[R] show postfit distributions for the main CRs and the SR. Tables~[R]-[R] present the final yields in the SR for the MTR category. No excess is present at the moment TBA discussion of the results.
+
+\hspace{10pt} The resulting postfit distributions associated to the VTR category are shown in Figures~[R]-[R]. The corresponding yields of data and simulated SM processes are given in Tables~[R]-[R].
+
+
+\section{Summary}
+\hspace{10pt} The presented study covered the search for the invisible decays of the Higgs boson, where the production mode in question is VBF, The study was performed using the 101.3~$fb^{-1}$ of data collected by the CMS experiment. Exploration of additional phase space found in lower $E_{T,miss}$ range was enabled through the introduction of a new analysis category based on new trigger algorithms tailored to look for the VBF topology. No deviations from the SM have been observed. The result is interpreted as the observed (expected) 95\% CL upper limit on the branching ratio of the Higgs boson decaying invisibly and it stands at: Br(H$\rightarrow$inv) = XX (XX). A combination with previous measurements targeting the VBF topology during the Run 2 phase is presented, bringing the total integrated luminosity to 137.2~$fb^{-1}$. The observed (expected) value of the Br(H$\rightarrow$inv) for the entire Run 2 phase is found to be XX (XX)\footnote{Under the assumption of the SM production cross section.}. Figure~\ref{fig:combined_limit} summarised the results of the individual measurements and the subsequent combination of categories.
+
+\begin{figure}[htbp]
+  \centering
+    \includegraphics[width= 0.95\textwidth]{Results/limit.pdf}
+  \caption{Combined limit (PLACEHOLDER).}
+  \label{fig:combined_limit}
+\end{figure}
