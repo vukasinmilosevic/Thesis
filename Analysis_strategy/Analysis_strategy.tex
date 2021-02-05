@@ -3,14 +3,14 @@
 \epigraph{\itshape``All men can see these tactics whereby I conquer, but what none can see is the strategy out of which victory is evolved."}{--- \textup{Sun Tzu}}
 
 \section{Introduction}
-\hspace{10pt}This chapter serves to present a detailed documentation of the analysis strategy used for the search for invisibly decaying Higgs bosons, where the Higgs boson is produced via the Vector Boson Fusion production mechanism. The study at hand has had a long history within the CMS experiment starting all the way back in the early days of Run 1~\cite{paper:HIG_17_023}. This thesis tends to build on conclusions and methods achieved with previous efforts by improving them where possible, while also taking the advantage of the full Run 2 dataset.
+\hspace{10pt}\lettrine[lines=2]{\initfamily{T}}{his chapter serves to present} a detailed documentation of the analysis strategy used for the search for invisibly decaying Higgs bosons, where the Higgs boson is produced via the Vector Boson Fusion production mechanism. The study at hand has had a long history within the CMS experiment starting all the way back in the early days of Run 1~\cite{paper:HIG_17_023}. This thesis tends to build on conclusions and methods achieved with previous efforts by improving them where possible, while also taking the advantage of the full Run 2 dataset.
 
 \hspace{10pt} Each of the following sections summarizes motivations and definitions that came into fruition while forming two main analysis categories. Special attention will be given to the analysis category based around new, production mode targeting triggers introduced in Section~\ref{sec:vbf_trgger}, which allowed for further exploration of the signal sensitive phase space. Being a large part of the motivation for the selection requirements, performance studies of analysis related trigger algorithms are going to be presented at this stage. Finally, this chapter concludes with a discussion regarding additional data quality issues plaguing the 2017 and 2018 eras of data taking and studies performed in order to mitigate their effects on the final result.
 
-\hspace{10pt} In order to be consistent with the notation used in Chapter~\ref{ch:combination}, which combines results from all hadronic production modes of the Higgs boson, a simple naming convention is going to be used based on the two main focuses in terms of the preferred Higgs boson production mode. All studies focusing on the Higgs boson produced via the vector boson fusion will be grouped under one roof named the ``VBF analysis'', while the remaining modes of interest such as the ttH, gluon-gluon fusion (ggH) and the VH production will represent the ``non-VBF analysis''.
+\hspace{10pt} In order to be consistent with the notation used in Chapter~\ref{ch:conclusion}, which presents a strategy for a combination of all hadronic production modes of the Higgs boson, a simple naming convention is going to be used based on the two main focuses in terms of the preferred Higgs boson production mode. All studies focusing on the Higgs boson produced via the Vector Boson Fusion will be grouped under one roof named the ``VBF analysis'', while the remaining modes of interest such as the ttH, ggH and the VH production will represent the ``non-VBF analysis''.
 
 \section{Selection requirements}
-\hspace{10pt} This section serves as summary of two main analysis categories. In order to simplify the way of addressing different categories within the VBF analysis, the following notation is used in future text. All studies built around the $E_{T,miss}$ and $H_{T,miss}$ triggers shown in Table~\ref{tab:metmht} are part of the Missing Energy Trigger (MTR) category. On the other hand, the new category being formed through the use of the VBF production mode triggers (listed in Table~\ref{tab:hlt_rates}) is named the VBF Trigger (VTR) category. A complete set of information regarding the L1 seeds used as inputs to the HLT algorithms forming these analysis categories is given in Table~\ref{a_tab:triggers}.
+\hspace{10pt} This section serves as a summary of two main analysis categories. In order to simplify the way of addressing different categories within the VBF analysis, the following notation is used in future text. All studies built around the $E_{T,miss}$ and $H_{T,miss}$ triggers shown in Table~\ref{tab:metmht} are part of the Missing Energy Trigger (MTR) category. On the other hand, the new category being formed through the use of the VBF production mode triggers (listed in Table~\ref{tab:hlt_rates}) is named the VBF Trigger (VTR) category. A complete set of information regarding the L1 seeds used as inputs to the HLT algorithms forming these analysis categories is given in Table~\ref{a_tab:triggers}.
 
 \hspace{10pt} The common ground for both categories is the approach to rejecting the contributions from major sources of SM background when forming the signal region (SR) through the implementation of object vetos. In order to remove the reducible contribution coming from main V+jets backgrounds $\mu/e/\tau$ vetos are imposed. A similar approach is taken in order to contain the $\gamma$+jets processes with a veto on photon objects being put in place. Finally, a b-jet object veto requirement reduces the background originating from top-quark SM processes. The implementation of the vetos follows the strategy described in Section~\ref{sec:object_corr}, where a veto weight is applied for simulation samples as opposed to a $N_{object}=0$ condition, which is used for data. The following pages introduce the main selection criteria for each of the categories.
 \subsection{Missing Energy Trigger category}
@@ -38,9 +38,9 @@
     $p_{T,j_2}$ and $\eta_{j2}$   & ${>} 40$~GeV and $ |\eta| < 4.7$      & All \\
     $\eta_{j1}\cdot\eta_{j2}$   & ${<}$ 0   & All \\
 
-    $m_{jj}$                               & ${>} 200$~GeV  \\       
-    $\Delta\eta_{jj}$                            & ${>} 1.0$  \\
-    $\Delta\phi_{jj}$                            & ${<} 1.5$  \\
+    $m_{jj}$                               & ${>} 200$~GeV & All \\       
+    $\Delta\eta_{jj}$                            & ${>} 1.0$ & All \\
+    $\Delta\phi_{jj}$                            & ${<} 1.5$ & All \\
         & & \\
          \hline
 \end{tabular}
@@ -50,24 +50,26 @@
 
 \hspace{10pt} Starting with the topological information, the VBF signature is characterised by a jet pair which has a large geometrical separation and therefore a large dijet mass. When interpreted in terms of the detector geometry (introduced in Section~\ref{sec:geometry}), this leads to conditions that jets, chosen as the two leading in $p_T$, have to be separated by a large value of $\Delta \eta$, a small $\Delta \phi$ and to have $\eta_{j1}\cdot\eta_{j2}<0$ by being in the opposite halves of the detector.
 
-\hspace{10pt} Moving on from the purely topological properties, the next step is to try and determine which variables represent a good basis for additional lowering of the contribution coming from various sources of SM background. Variables such as the $min \Delta \phi (j, E_T^{miss})$\footnote{The minimal $\Delta\phi$ between one of the four leading jets and the $\vec{p}_{T, miss}$.} allow for control of the QCD multijet background. Figure~\ref{fig:sr_n-1_shapes_1} shows its separation power using the N-1 selection\footnote{All of selection requirements are being applied but the one involving the variable of interest.} approach. With it showing combined background composition originating from simulated samples of SM processes overlaid with the distribution of the signal, it can be seen that the requirement $min \Delta \phi (j, E_{T,miss})>$~0.5 yields a significant reduction of QCD multijet backgrounds, without a large loss of signal sensitivity. Another useful requirement comes from the comparison of the offline (after the full reconstruction) and calorimeter only $E_{T,miss}$. A requirement that the relative difference is less than 50\% (when taking the offline $E_{T,miss}$ as reference) provides another way of rejecting events which contain energetic mismeasured jets originating from multijet processes. 
+\hspace{10pt} Moving on from the purely topological properties, the next step is to try and determine which variables represent a good basis for additional lowering of the contribution coming from various sources of SM background. Variables such as the $min \Delta \phi (j, E_T^{miss})$\footnote{The minimal $\Delta\phi$ between one of the four leading jets and the $\vec{p}_{T, miss}$.} allow for control of the QCD multijet background. Figure~\ref{fig:sr_n-1_shapes_1}\footnote{Signal yield has been scaled by a factor of 5 in order to have a better visual comparison against the main SM backgrounds (same statement holds true for the rest of this chapter).} shows its separation power using the N-1 selection\footnote{All of selection requirements are being applied but the one involving the variable of interest.} approach. With it showing combined background composition originating from simulated samples of SM processes overlaid with the distribution of the signal, it can be seen that the requirement $min \Delta \phi (j, E_{T,miss})>$~0.5 yields a significant reduction of QCD multijet backgrounds, without a large loss of signal sensitivity. Another useful requirement comes from the comparison of the offline (after the full reconstruction) and calorimeter only $E_{T,miss}$. A requirement that the relative difference is less than 50\% (when taking the offline $E_{T,miss}$ as reference) provides another way of rejecting events which contain energetic mismeasured jets originating from multijet processes. 
 
-\hspace{10pt} As indicated at the beginning of this section, geometrical properties of the selected dijet pair play a large role in the recognition of signal-like events, as illustrated in Figure~\ref{fig:sr_n-1_shapes_1}. This comparison of $\Delta \eta_{jj}$ and $\Delta \phi_{jj}$ distributions between main backgrounds and signal shows a clear opening for a set of requirements which improve the selection. An optimisation procedure, taking into account the entire setup for the analysis (including the contributions from dedicated control regions), was performed~\cite{paper:HIG_17_023} in order to obtain the thresholds presented in Table~\ref{tab:selection_mtr}. 
+\hspace{10pt} As indicated at the beginning of this section, geometrical properties of the selected dijet pair play a large role in the recognition of signal-like events, as illustrated in Figure~\ref{fig:sr_n-1_shapes_1}. This comparison of $\Delta \eta_{jj}$ and $\Delta \phi_{jj}$ distributions between main backgrounds and signal shows a clear opening for a set of requirements which improve the selection. An optimisation procedure, taking into account the entire setup for the analysis (including the contributions from dedicated control regions), was performed~\cite{paper:HIG_17_023} in order to obtain the thresholds presented in Table~\ref{tab:selection_mtr}. It involved scanning for the best expected sensitivity towards the Br(H$\rightarrow$inv) based on different variations of $m_{jj}$, $\Delta\phi_{jj}$ and $\Delta\eta_{jj}$ selection requirements. Testing was performed in two instances, first being optimised only for the VBF H$\rightarrow$inv signal in order to have a VBF topology overlook and second for the combined VBF and ggH$\rightarrow$inv signal (providing a better look into the contamination of VBF topology introduced by the addition of the ggH production mode).
 
 \hspace{10pt} Finally, there are requirements that arise strictly from trigger limitations. This can be seen in the choice of the $E_{T,miss}$ threshold, where the requirement on it being larger than $250$~GeV was imposed in order to stay above the $95$~\% efficiency for the category-forming triggers, when measured in data. This efficiency improves to $99$~\% for the values of $E_{T,miss}>300$~GeV. A more detailed description of this measurement is given in Section~\ref{subsec:mtr_triggers}.
 
-\hspace{10pt} Figure~\ref{fig:sr_n-1_shapes_2} shows data to simulation agreement for a selected set of main analysis variables after the application of the complete MTR selection for the 2017 era of data taking. Corresponding information regarding the SR for the 2018 era is given in Appendix~\ref{app:MTR_2018}. The scale of data to simulation disagreement illustrates the need for dedicated control regions in order to better estimate the irreducible part of the contribution originating from V+jets processes. The MTR category is constructed to represent the main analysis category, covering a large piece of the phase space of interest. In order to further improve on it, the following section describes a complementary category formed around the set of VBF triggers introduced in Section~\ref{sec:vbf_trgger}.
+\hspace{10pt} Lastly, Figure~\ref{fig:sr_n-1_shapes_2} shows data to simulation agreement for a selected set of main analysis variables after the application of the complete MTR selection for the 2017 era of data taking\footnote{These selection requirements are inclusive of the additional data quality requirements introduced in Section~\ref{sec:data_quality} (this holds true for both categories across all eras).}. Corresponding information regarding the SR for the 2018 era is given in Appendix~\ref{app:MTR_2018}. The MTR category is constructed to represent the main analysis category, covering a large piece of the phase space of interest. In order to further improve on it, the following section describes a complementary category formed around the set of VBF triggers introduced in Section~\ref{sec:vbf_trgger}.
+
+%The scale of data to simulation disagreement illustrates the need for dedicated control regions in order to better estimate the irreducible part of the contribution originating from V+jets processes. 
 
 \begin{figure}[htbp]
   \centering
     \subfigure[$min\Delta\phi(j,E_T^{miss})$]{
-    \includegraphics[width=0.49\textwidth]{Analysis_strategy/Nminus1/min_dphi_nminus1_log.pdf}
+    \includegraphics[width=0.49\textwidth]{Analysis_strategy/Nminus1/MetNoLep_CleanJet_mindPhi_MTR.pdf}
     }\\
     \subfigure[$\Delta \eta_{jj}$]{
-    \includegraphics[width=0.49\textwidth]{Analysis_strategy/Nminus1/leading_dEtajj_nminus1_log.pdf}
+    \includegraphics[width=0.49\textwidth]{Analysis_strategy/Nminus1/leading_dEtajj_log.pdf}
     }
     \subfigure[$\Delta \phi_{jj}$]{
-    \includegraphics[width=0.49\textwidth]{Analysis_strategy/Nminus1/leading_dPhijj_nminus1_log.pdf}
+    \includegraphics[width=0.49\textwidth]{Analysis_strategy/Nminus1/leading_dPhijj_log.pdf}
     }
     
   \caption{Distributions of $min\Delta\phi(j,E_{T,miss})$, $\Delta \eta_{jj}$ and $\Delta \phi_{jj}$ variables in the SR, for the MTR category after the N-1 selection, for the 2017 data.}
@@ -80,7 +82,7 @@
       \subfigure[$E_{T,miss}$]{
     \includegraphics[width=0.49\textwidth]{Analysis_strategy/MTR_2017_SR/MetNoMu.pdf}
     }
-    \subfigure[$M_{jj}$]{
+    \subfigure[$m_{jj}$]{
     \includegraphics[width=0.49\textwidth]{Analysis_strategy/MTR_2017_SR/leadingJet_mjj.pdf}
     }\\
     \subfigure[$p_{T,j1}$]{
@@ -89,7 +91,7 @@
     \subfigure[$p_{T,j2}$]{
     \includegraphics[width=0.49\textwidth]{Analysis_strategy/MTR_2017_SR/Subleading_jet_pt.pdf}
     }
-  \caption{Distributions of $E_{T,miss}$, $M_{jj}$, $p_{T,j1}$ and $p_{T,j2}$ variables in the SR after the full MTR selection, for the 2017 data.}
+  \caption{Distributions of $E_{T,miss}$, $m_{jj}$, $p_{T,j1}$ and $p_{T,j2}$ variables in the SR after the full MTR selection, for the 2017 data.}
   \label{fig:sr_n-1_shapes_2}
 \end{figure}
 
@@ -116,18 +118,17 @@
     $\mu$ ($e$) veto               & $p_T > 10$~GeV,~$|\eta| < 2.4 (2.5)$  & $Z(ll)$~+jets,~$W(l\nu)$~+jets \\
     $\tau$ lepton veto                 & $p_T > 20$~GeV,~$|\eta| < 2.3$        & $Z(ll)$~+jets,~$W(l\nu)$~+jets  \\
     $\gamma$ veto                        & $p_T > 15$~GeV,~$|\eta| < 2.5$        & $\gamma$~+jets \\
-    B jet veto                    &  $p_T > 20$~GeV,~$|\eta| < 2.4$  &  Top quark\\
+    b jet veto                    &  $p_T > 20$~GeV,~$|\eta| < 2.4$  &  Top quark\\
         & & \\
     $E_{T,miss}$                          & $[160,250)$~GeV                          & QCD, top quark, $Z(ll)$~+jets \\
     $min\Delta\phi(j, E_{T,miss})$   &  $ {>} 1.8$ radians               & QCD \\
-    $min\Delta\phi(j, E_{T,miss})$   &  $ {>} 0.5$ radians               & QCD \\
         & & \\
     Largest $m_{jj}$                               & ${>}$ 900~GeV  \\       
     $p_{T,j_1}$ and $\eta_{j1}$   & ${>} 140$~GeV and $ |\eta| < 4.7$      & All \\
     $p_{T,j_2}$ and $\eta_{j2}$   & ${>} 70$~GeV and $ |\eta| < 4.7$      & All \\
     $\eta_{j1}\cdot\eta_{j2}$   & ${<}$ 0   & All \\
-    $\Delta\eta_{jj}$                            & ${>} 1.0$  \\
-    $\Delta\phi_{jj}$                            & ${<} 1.5$  \\
+    $\Delta\eta_{jj}$                            & ${>} 1.0$ & All  \\
+    $\Delta\phi_{jj}$                            & ${<} 1.8$ & All  \\
       & & \\
          \hline
 \end{tabular}
@@ -135,19 +136,19 @@
 \label{tab:selection_vtr}
 \end{table}
 
-\hspace{10pt} This approach orthogonality between two analysis categories. The high thresholds for jet $p_T$ values and the large dijet mass requirement reduce the difference between two choices of the jet pair between categories\footnote{With the MTR category looking for the leading and subleading jet, and the VTR taking the jet pair forming the largest dijet mass}. The requirements on the $\Delta\eta_{jj}$ and $\Delta\phi_{jj}$ are directly constrained by this, allowing for the usage of the same, previously optimised, requirements from the MTR category.
+\hspace{10pt} This approach ensures orthogonality between two analysis categories. The high thresholds for jet $p_T$ values and the large dijet mass requirement reduce the difference between two choices of the jet pair between categories\footnote{With the MTR category looking for the leading and subleading jet, and the VTR taking the jet pair forming the largest dijet mass.}. The requirements on the $\Delta\eta_{jj}$ and $\Delta\phi_{jj}$ are built on this, allowing for the usage of similar requirements (slightly relaxed for the $\Delta \phi_{jj}$ case) to those introduced for the MTR category.
 
-\hspace{10pt} As seen in the previous section, a good handle for dealing with these processes is given in the form of the $min\Delta\phi(j, E_{T,miss})$ variable. Figure~\ref{fig:VTR_mindphi} shows the distribution of this variable in the VTR SR after the application of a looser ($>0.5$) requirement. It can be seen that values bellow 1.8 are largely background dominated, with the QCD multijet processes leading the way, while being populated with a low yield of signal events, thus motivating a requirement which would remove this region without risking a significant loss in signal acceptance. 
+\hspace{10pt} As seen in the previous section, a good handle for dealing with QCD multijet processes is given in the form of the $min\Delta\phi(j, E_{T,miss})$ variable. Figure~\ref{fig:VTR_mindphi} shows the distribution of this variable in the VTR SR after the application of N-1 type selection. It can be seen that values bellow 1.8 are largely background dominated, with the QCD multijet processes leading the way, while being populated with a low yield of signal events, thus motivating a requirement which would remove this region without risking a significant loss in signal acceptance. 
 
 \begin{figure}[htbp]
   \centering
     \subfigure{
-    \includegraphics[width=0.49\textwidth]{Analysis_strategy/Nminus1/VTR/MetNoLep_CleanJet_mindPhi_FAST_log.pdf}
+    \includegraphics[width=0.49\textwidth]{Analysis_strategy/Nminus1/MetNoLep_CleanJet_mindPhi_VTR.pdf}
     }
-  \caption{Distribution of the \mindphi~variable in the SR after the VTR-like selection requirements.}
+  \caption{Distribution of the \mindphi~variable in the SR after the N-1 selection.}
   \label{fig:VTR_mindphi}
 \end{figure}
-Figure~\ref{fig:VTR_SR_2017} shows the data to simulation comparisons for a few selected variables after the full VTR selection. A set of dedicated control regions will be created for the VTR category, analogous to the MTR approach, in order to improve the overall data to simulation agreement. Additional set of distributions for VTR category representing the 2018 era is given in Appendix~\ref{app:MTR_2018} alongside their MTR counterparts. 
+Figure~\ref{fig:VTR_SR_2017} shows the data to simulation comparisons for a few selected variables after the full VTR selection. A set of dedicated control regions will be created for the VTR category, analogous to the MTR approach, in order to improve the overall data to simulation agreement. Additional set of distributions for the VTR category representing the 2018 era is given in Appendix~\ref{app:MTR_2018} alongside their MTR counterparts. 
 
 
 %first step will be to see how this orthogonality can be achieved on the selection level. Following the trigger turnons given in Figures [TBD] and the definition of the MTR category (introduced in the prvious paragraph), it can be seen that a $E_T^{miss}$ range of $[160,250)~$GeV represents a good requirement that would clearly establish the separation between two categories. Figures [TBD] and [TBD] showcase the Signal Region for the VTR category taking into account two selection options showcased in Section~\ref{sec:triggers}. Based on the conclusion of that section (and also taking into account that both options give similar event yields), option B, where the HLT selection logic is followed, will be used to define the VTR category. Additionally a higher requirement on $min\Delta\phi(jet,~E_T^{miss,~no~lep})>1.8$ has been added to reduce the contribution from multijet processes. 
@@ -169,7 +170,7 @@ Figure~\ref{fig:VTR_SR_2017} shows the data to simulation comparisons for a few 
     \subfigure[$E_{T,miss}$]{
     \includegraphics[width=0.49\textwidth]{Analysis_strategy/VTR_2017_SR/MetNoMu.pdf}
     }
-  \caption{Distributions of $\Delta \eta_{jj}$, $\Delta \phi_{jj}$, $m_{jj}$ and $E_{T,miss}$ variables int the signal region after the full VTR selection, for the 2017 data.}
+  \caption{Distributions of $\Delta \eta_{jj}$, $\Delta \phi_{jj}$, $m_{jj}$ and $E_{T,miss}$ variables in the signal region after the full VTR selection, for the 2017 data.}
   \label{fig:VTR_SR_2017}
 \end{figure}
 
@@ -182,9 +183,9 @@ Figure~\ref{fig:VTR_SR_2017} shows the data to simulation comparisons for a few 
 \end{equation}
 where the sum goes over all muon objects. Such definition of the missing energy is equivalent to the standard $E_{T, miss}$ for the SR, due to the use of the muon veto. This re-definition extends the usability of the aforementioned trigger algorithms, which can now be used to select events entering muon regions (more details about these specialised regions are given in Chapter~\ref{ch:control_regions}). For the regions containing electron objects, a combination of electron and photon triggers is used. The addition of photon triggers was performed in order to achieve better statistical precision in these regions (which will benefit the double electron region in particular, due to its tight requirements). The complete list of HLT paths used in this analysis (and the corresponding L1 seeds used as input) is given in Table~\ref{a_tab:triggers}.
 
-\subsection{Performance of $E_T^{miss}$ and $H_T^{miss}$ based triggers}
+\subsection{Performance of $E_{T,miss}$ and $H_{T,miss}$ based triggers}
 \label{subsec:mtr_triggers}
-\hspace{10pt} Following the ordering used in the previous section, the first topic of discussion is the performance of triggers used to form the MTR category. Listed in Table~\ref{tab:metmht}, they are represented by a set of selection requirements on $E_{T,miss}^{~no,\mu}$ and $H_{T,miss}^{no,~mu}$ variables at the HLT stage. This section summarizes the study of their performance during the 2017 and 2018 eras of data collection. It is based around the analysis selection requirements for the MTR category (as shown in Table~\ref{tab:selection_mtr}), presenting the motivation behind the $E_{T,miss}$ threshold (which is set with respect to the overall performance). More details about the choice of the selection itself can be found in Section~\ref{subsec:vbfselection}.
+\hspace{10pt} Following the ordering used in the previous section, the first topic of discussion is the performance of triggers used to form the MTR category. Listed in Table~\ref{tab:metmht}, they are represented by a set of selection requirements on $E_{T,miss}^{~no,\mu}$ and $H_{T,miss}^{no,\mu}$ variables at the HLT stage. This section summarizes the study of their performance during the 2017 and 2018 eras of data collection. It is based around the analysis selection requirements for the MTR category (as shown in Table~\ref{tab:selection_mtr}), presenting the motivation behind the $E_{T,miss}$ threshold (which is set with respect to the overall performance). More details about the choice of the selection itself can be found in Section~\ref{subsec:vbfselection}.
 
 \begin{table}[htbp]
 \centering
@@ -199,15 +200,15 @@ Era & Trigger logic                                               \\ \hline
 \end{tabular}
 \caption{A set of $E_{T,miss}$ and $H_{T,miss}$  triggers used in the analysis. The backup path contains an additional $H_T>$~60~GeV requirement.  \label{tab:metmht}}
 \end{table}
-\hspace{10pt} During the 2017 era of data taking, a special, control, version of main $E_{T,miss}$ path had to be introduced, as the main one was prescaled due to problems which led to the drastic increase of its rate. The origin of this problem is connected to the same issues affecting the L1 VBF seed as explained in Section~\ref{sec:vbf_trgger}. This has resulted in the inclusion of the additional $H_T>$60~GeV requirement at the trigger level. This issue was quickly mitigated in 2017 by applying slightly higher thresholds on the input L1 seeds, thus reducing the amount of rate brought by the trigger. This backup path was kept for the entirety of the 2018 era, but with certain modifications applied to its input. As it was noticed that it brought an efficient reduction in rate when used as a backup, it was redeployed with lower requirements applied to the input L1 seeds, allowing for it to be used alongside the main path in the analysis.
+\hspace{10pt} During the 2017 era of data taking a special, control, version of main $E_{T,miss}$ path had to be introduced, as the main one was prescaled due to problems which led to the drastic increase of its rate. The origin of this problem is connected to the same issues affecting the L1 VBF seed as explained in Section~\ref{sec:vbf_trgger}. This has resulted in the inclusion of the additional $H_T>$~60~GeV requirement at the trigger level. This issue was quickly mitigated in 2017 by applying slightly higher thresholds on the input L1 seeds, thus reducing the amount of rate brought by the trigger. This backup path was kept for the entirety of the 2018 era, but with certain modifications applied to its input. As it was noticed that it brought an efficient reduction in rate when used as a backup, it was redeployed with lower requirements applied to the input L1 seeds, allowing for it to be used alongside the main path in the analysis.
 
-\hspace{10pt} The general approach when measuring efficiencies for both eras is to form dedicated regions in which the actual measurement will be performed. For this study this is done by using a slightly modified definition of a single muon control region. As described in Section~\ref{sec:single_muon}, this modified the muon veto condition by asking for the existence of exactly one muon object in the event which passes the tight conditions. For the measurement itself, a control HLT path is being used, which represents a single muon trigger looking for muon objects with $p_T>$27~GeV which pass the isolation requirement at the HLT level. In order to ensure that the study is performed in a region of high control trigger efficiency (on the trigger "plateau"), a requirement $p_{T,\mu}>30$~GeV is imposed on the selected tight muon. The efficiency measurement is presented in terms of $E_{T,miss}^{~no,\mu}$ bins and defined as:
+\hspace{10pt} The general approach when measuring efficiencies for both eras is to form dedicated regions in which the actual measurement will be performed. For this study it is done by using a slightly modified definition of a single muon control region. As described in Section~\ref{sec:single_muon}, this modified the muon veto condition by asking for the existence of exactly one muon object in the event which passes the tight conditions. For the measurement itself, a control HLT path is being used, which represents a single muon trigger looking for muon objects with $p_T>$~27~GeV which pass the isolation requirement at the HLT level. In order to ensure that the study is performed in a region of high control trigger efficiency (on the trigger "plateau"), a requirement $p_{T,\mu}>30$~GeV is imposed on the selected tight muon. The efficiency measurement is presented in terms of $E_{T,miss}^{~no,\mu}$ bins and defined as:
 
 \begin{equation}
 \text{Efficiency} = \frac{(\text{Passing analysis selection requirements})~and~(\text{HLT triggered})}{\text{Passing analysis selection requirements}},
 \end{equation}
 
-The efficiency of the logical OR of the two HLT paths is measured both in data and simulation and the resulting difference is used as a scale factor which is applied, in the main analysis, to simulated samples on an event-by-event basis (as described in Section~\ref{sec:object_corr}). Inputs for these measurements are formed from the muon enriched dataset and the QCD W+jets simulaton samples, representing the dominant SM process in this region. Figure~\ref{fig:metmht_effs} presents the resulting efficiencies, with the corresponding scale factors, for both 2017 and 2018 eras.
+The efficiency of the logical OR of the two HLT paths is measured both in data and simulation and the resulting difference is used as a scale factor which is applied in the main analysis to simulated samples on an event-by-event basis (as described in Section~\ref{sec:object_corr}). Inputs for these measurements are formed from the muon enriched dataset and the QCD W+jets simulaton samples, representing the dominant SM process in this region. Figure~\ref{fig:metmht_effs} presents the resulting efficiencies, with the corresponding scale factors, for both 2017 and 2018 eras. An additional set of efficiencies was produced by separating jets into three categories by looking at the geometric properties of the two leading jets. This resulted into three categories: two central jets (CC), one central, one forward jet (CF) and two forward jets (FF)\footnote{A jet is categorised as central if $|\eta|<$~2.5, while it is a forward jet if $|\eta|\geq$~2.5.}. This was implemented in order to have a confirmation that no significant deviations appear between two regions with larger population of events (CC and CF). Figure~\ref{fig:metmht_test} summarises these results by presenting the efficiencies expressed in $E_{T,miss}^{~no,\mu}$ bins.
 
 \begin{figure}[htbp]
   \centering
@@ -222,45 +223,20 @@ The efficiency of the logical OR of the two HLT paths is measured both in data a
 \end{figure}
 
 
-\hspace{10pt} An additional set of efficiencies was produced by separating jets into three categories by looking at the geometric properties of the two leading jets. This resulted into three categories: two central jets (CC), one central, one forward jet (CF) and two forward jets (FF). This study was prompted as safety check in order to confirm that a previously reported dip in $m_{jj}$ efficiency during the 2016 era~\cite{note:AN_16_418} disappeared after mitigation. The origin of this efficiency loss was the exclusion of the HF region from the energy sums at the L1T level. The summary of this study is that the lack of efficiency issues observed in the previous era has been correctly removed through the addition of the HF contribution implemented for the 2017 and 2018 eras. Figure~\ref{fig:metmht_test} summarises these results by presenting the efficiencies in both the $E_{T,miss}^{~no,\mu}$ and $m_{jj}$ bins. The added $E_{T,miss}^{~no,\mu}$ option was included in order to have a confirmation that no significant deviations appear between two regions with larger population of events (CC and CF).
 
 
 \begin{figure}[htbp]
   \centering
     \subfigure[$E_T^{miss}$ - 2017 (data)]{
-    \includegraphics[width=0.45\textwidth]{Analysis_strategy/METMHT_eff/MetNoMuMETMHT_2017data_case_study.pdf}
+    \includegraphics[width=0.45\textwidth]{Analysis_strategy/METMHT_eff/MetNoMuMETMHT_2017_separated.pdf}
     }
-    \subfigure[$E_T^{miss}$ - 2017 (simulation)]{
-    \includegraphics[width=0.45\textwidth]{Analysis_strategy/METMHT_eff/MetNoMuMETMHT_2017mc_case_study.pdf}
-    }\\
     \subfigure[$E_T^{miss}$ -  2018 (data)]{
-    \includegraphics[width=0.45\textwidth]{Analysis_strategy/METMHT_eff/MetNoMuMETMHT_2018data_case_study.pdf}
+    \includegraphics[width=0.45\textwidth]{Analysis_strategy/METMHT_eff/MetNoMuMETMHT_2018_separated.pdf}
     }
-    \subfigure[$E_T^{miss}$ -  2018 (simulation)]{
-    \includegraphics[width=0.45\textwidth]{Analysis_strategy/METMHT_eff/MetNoMuMETMHT_2018mc_case_study.pdf}
-    }
-  \caption{Trigger efficiencies for the MTR category algorithms presented in $E_{T.miss}^{no,\mu}$ bins for both eras (computed for data and simulation). Separation into three different jet $\eta$ regions (CC, CF and FF) is performed. The resulting comparison between the CC and CF is also presented with the ratio plot. }
+  \caption{Trigger efficiencies for the MTR category algorithms presented in $E_{T.miss}^{no,\mu}$ bins for both eras measured in data. Separation into three different jet $\eta$ regions (CC, CF and FF) is performed. The resulting comparison between the CC and CF is also presented with the ratio plot. }
   \label{fig:metmht_test}
 \end{figure}
 
-
-\begin{figure}[htbp]
-  \centering
-    \subfigure[$m_{jj}$ - 2017 (data)]{
-    \includegraphics[width=0.45\textwidth]{Analysis_strategy/METMHT_eff/MetNoMuMETMHT_2017data_case_study.pdf}
-    }
-    \subfigure[$m_{jj}$ - 2017 (simulation)]{
-    \includegraphics[width=0.45\textwidth]{Analysis_strategy/METMHT_eff/MetNoMuMETMHT_2017mc_case_study.pdf}
-    }\\
-    \subfigure[$m_{jj}$ - 2018 (data)]{
-    \includegraphics[width=0.45\textwidth]{Analysis_strategy/METMHT_eff/MetNoMuMETMHT_2018data_case_study.pdf}
-    }
-    \subfigure[$m_{jj}$ - 2018 (simulation)]{
-    \includegraphics[width=0.45\textwidth]{Analysis_strategy/METMHT_eff/MetNoMuMETMHT_2018mc_case_study.pdf}
-    }
-  \caption{Trigger efficiencies for the MTR category algorithms presented in $m_{jj}$ bins for both eras (computed for data and simulation). Separation into three different jet $\eta$ regions (CC, CF and FF) is performed. The resulting comparison between the CC and CF is also presented with the ratio plot.}
-  \label{fig:metmht_test}
-\end{figure}
 
 %\hspace{10pt} In order to ensure that the variations between regions have been accounted for, a comparison of trigger efficiencies for the single and double muon regions is performed. The double muon region is formed in mostly the same way as the single muon region, with the difference being the request that there exist exactly two muons (at least one of which needs to pass the tight requirements) in the event. Conclusion on regarding this study.
 
@@ -273,16 +249,16 @@ The efficiency of the logical OR of the two HLT paths is measured both in data a
 \subsection{Performance of VBF triggers}
 \label{sec:vbf_trigger_performance}
 
-\hspace{10pt} Similarly to previously described efficiency study regarding the MTR category triggers, the first step when approaching the VBF triggers is the formation of the single muon region. From this point, the general approach takes a slightly different turn. As the MTR category relied on already proven, optimised selection, the VBF triggers brought a new part of the phase space that is yet to be explored. Staring from the information about the building blocks of VBF paths (discussed in Section~\ref{sec:vbf_trgger}), the next step was the optimisation the of the selection requirements for three main variables: $m_{jj}$, $p_{T,j1}$ and $p_{T,j2}$. In order to follow the trigger logic, the selection of the dijet pair is based around the largest $m_{jj}$ logic.
+\hspace{10pt} Similarly to previously described efficiency study regarding the MTR category triggers, the first step when approaching the VBF triggers is the formation of the single muon region. From this point, the general approach takes a slightly different turn. As the MTR category relied on already proven, optimised selection, the VBF triggers brought a new part of the phase space that is yet to be explored. Starting from the information about the building blocks of VBF paths (discussed in Section~\ref{sec:vbf_trgger}), the next step was the optimisation the of the selection requirements for three main variables: $m_{jj}$, $p_{T,j1}$ and $p_{T,j2}$. In order to follow the trigger logic, the selection of the dijet pair is based around the largest $m_{jj}$ logic.
 
 \hspace{10pt} Figure~\ref{fig:vbf_trig_mjj_opt} shows the resulting efficiency of the logical OR of both VBF triggers presented in terms of $m_{jj}$ bins, where the thresholds for the other two main variables are kept high enough to ensure that an unbiased decision can be made. The resulting requirement of $m_{jj}>$~900~GeV is motivated by the desire to stay above the $95$~\% trigger efficiency in data. Figure~\ref{fig:vbf_trig_pt_opt} presents results of equivalent optimisation studies performed for the purposes of tailoring selection requirements for the jet $p_T$ variables.
 
 \begin{figure}[htbp]
   \centering
     \subfigure{
-    \includegraphics[width=0.45\textwidth]{Analysis_strategy/VBF_eff/2017/lMjjVBF_1.pdf}
+    \includegraphics[width=0.45\textwidth]{Analysis_strategy/VBF_eff/2017/lMjj_2017_optimisation.pdf}
     }
-\caption{Trigger efficiency of the logical OR of both VBF triggers (performed in data), presented in $m_{jj}$ bins used to motivate a selection requirement for this variable.}
+\caption{Trigger efficiency of the logical OR of both VBF triggers (performed in data), presented in $m_{jj}$ bins, used to motivate a selection requirement for this variable.}
 \label{fig:vbf_trig_mjj_opt}
 \end{figure}
 
@@ -290,26 +266,26 @@ The efficiency of the logical OR of the two HLT paths is measured both in data a
   \centering
 
     \subfigure[$p_{T,j1}$ efficiency]{
-    \includegraphics[width=0.45\textwidth]{Analysis_strategy/VBF_eff/2017/lMjj_jet1_ptVBF_1.pdf}
+    \includegraphics[width=0.45\textwidth]{Analysis_strategy/VBF_eff/2017/lMjj_jet1_pt_2017_optimisation.pdf}
     }
     \subfigure[$p_{T,j2}$ efficiency]{
-    \includegraphics[width=0.45\textwidth]{Analysis_strategy/VBF_eff/2017/lMjj_jet2_ptVBF_1.pdf}
+    \includegraphics[width=0.45\textwidth]{Analysis_strategy/VBF_eff/2017/lMjj_jet2_pt_2017_optimisation.pdf}
     }
-  \caption{Trigger efficiency of the logical OR of both VBF triggers (performed in data), presented in $p_T$ bins for the leading (left) and subleading (right) jet, used to motivate selection requirements for these variable.}
+  \caption{Trigger efficiency of the logical OR of both VBF triggers (performed in data), presented in $p_T$ bins for the leading (a) and subleading (b) jet, used to motivate selection requirements for these variable.}
   \label{fig:vbf_trig_pt_opt}
 \end{figure}
 
-\hspace{10pt} Following the high thresholds on jet properties, the difference between selecting the two leading $p_T$ jets and the ones forming the largest $m_{jj}$ is small enough that it brings the option of using the rest of the already optimised MTR requirements into the VTR selection. At this stage, these requirements form almost the final VTR category, differing only with the $min\Delta\phi(j, E_{T,miss})>$0.5 requirement. Figure~\ref{fig:vbf_proto_trig_eff} shows the data to simulation comparison of the performance of VBF triggers for both eras (for the current, proto-VTR, selection requirements).
+\hspace{10pt} Following the high thresholds on jet properties, the difference between selecting the two leading $p_T$ jets and the ones forming the largest $m_{jj}$ is small enough that it brings the option of using the rest of the already optimised MTR strategy into the VTR selection. At this stage, these requirements form almost the final VTR category, differing only with the $min\Delta\phi(j, E_{T,miss})>$~0.5 requirement. Figure~\ref{fig:vbf_proto_trig_eff} shows the data to simulation comparison of the performance of VBF triggers for both eras (for the current, proto-VTR, selection requirements).
 
 \begin{figure}[htbp]
   \centering
     \subfigure[$E_{T,miss}$ - 2017]{
-    \includegraphics[width=0.45\textwidth]{Analysis_strategy/VBF_eff/VBF_trig_2017_proto.png}
+    \includegraphics[width=0.45\textwidth]{Analysis_strategy/VBF_eff/2017/VBF_trig_2017_proto.pdf}
     }
     \subfigure[$E_{T,miss}$ - 2018]{
-    \includegraphics[width=0.45\textwidth]{Analysis_strategy/VBF_eff/VBF_trig_2018_proto.png}
+    \includegraphics[width=0.45\textwidth]{Analysis_strategy/VBF_eff/2017/VBF_trig_2018_proto.pdf}
     }
-  \caption{Trigger efficiency of the logical OR of both VBF triggers, presented in $E_{T,miss}$ measured using the proto-VTR selection requirements.}
+  \caption{Trigger efficiency of the logical OR of both VBF triggers presented in $E_{T,miss}$ bins, measured using the proto-VTR selection requirements.}
   \label{fig:vbf_proto_trig_eff}
 \end{figure}
 
@@ -319,7 +295,7 @@ The efficiency of the logical OR of the two HLT paths is measured both in data a
 
 \begin{figure}[htbp]
   \centering
-    \includegraphics[width=0.5\textwidth]{Analysis_strategy/VBF_eff/2017/VBF_vs_METMHT.png}
+    \includegraphics[width=0.45\textwidth]{Analysis_strategy/VBF_eff/2017/MetNoMu_2017_comparison.pdf}
   \caption{Comparison of efficiencies for both the MTR and VTR constructing trigger groups, presented in $E_{T,miss}$ bins. Study was performed for the 2017 era of data taking.}
   \label{fig:vbf_metmht_comp}
 \end{figure}
@@ -332,12 +308,12 @@ The efficiency of the logical OR of the two HLT paths is measured both in data a
     \subfigure[$E_{T,miss}$ - 2018]{
     \includegraphics[width=0.45\textwidth]{Analysis_strategy/VBF_eff/MetNoMuVBF_2018.pdf}
     }
-  \caption{Trigger efficiency of the logical OR of both VBF triggers, presented in $E_{T,miss}$ measured using the full VTR selection requirements for both 2017 (left) and 2018 (right) eras.}
+  \caption{Trigger efficiency of the logical OR of both VBF triggers presented in $E_{T,miss}$ bins, measured using the full VTR selection requirements for both 2017 (a) and 2018 (b) eras.}
   \label{fig:vbf_trig_eff_final}
 \end{figure}
 
-\subsection{Performance of the Electron and Photon triggers}
-\hspace{10pt} For the purposes of creating dedicated control regions for V+jets background processes, in a similar vein to muon regions, a set of dedicated triggers is needed. This set is formed from three HLT paths. The first algorithm employed here is a single electron path requiring $p_T>$~32~GeV threshold at the HLT lvl (35~GeV for 2018). This lower threshold is enabled through the implementation of the isolation requirement on the electron objects.
+\subsection{Performance of the electron and photon triggers}
+\hspace{10pt} For the purposes of creating dedicated control regions for V+jets background processes, in a similar vein to muon regions, a set of dedicated triggers is needed. This set is formed from three HLT paths. The first algorithm employed here is a single electron path requiring $p_T>$~32~GeV threshold at the HLT level (35~GeV for 2018). This lower threshold is enabled through the implementation of the isolation requirement on the electron objects.
 
 \hspace{10pt} Continuing with the set, a higher $p_T$ threshold electron trigger ($p_{T,e}>$~115~GeV) is used to increase the number of selected events, bringing the benefits of not being constrained by the isolation requirement. Finally, in order to further boost the statistical precision within these regions, a photon trigger (requiring $p_{T,\gamma}>$~200~GeV) is brought into the setup. A logical OR of these triggers is taken as the resulting algorithm used to select events. The efficiency measurement for this set of triggers is performed using the standard "tag and probe" algorithm recommended by the E/Gamma POG~\cite{twiki:EGamma_tag_and_probe}.
 
@@ -349,16 +325,16 @@ where the iteration goes over each electron in the collection, allowing for easi
 
 \begin{figure}[hbtp]
 \begin{center}
-    \includegraphics[width=0.45\textwidth]{Analysis_strategy/Electron_triggers/electron_trig_eff_2017.pdf}
-    \includegraphics[width=0.45\textwidth]{Analysis_strategy/Electron_triggers/electron_trig_eff_2018.pdf}
-    \caption{Efficiencies of the logical OR of the three aforementioned triggers used to select electron events for 2017 (left) and 2018 (right) as a function of the electron transverse momentum (separated into several categories in electron $|\eta|$)~\cite{note:AN_19_257}.}
+   \subfigure[2017]{ \includegraphics[width=0.7\textwidth]{Analysis_strategy/Electron_triggers/electron_trig_eff_2017.pdf}}\\
+   \subfigure[2018]{ \includegraphics[width=0.7\textwidth]{Analysis_strategy/Electron_triggers/electron_trig_eff_2018.pdf}}
+    \caption{Efficiencies of the logical OR of the three aforementioned triggers used to select electron events for 2017 (a) and 2018 (b) as a function of the electron transverse momentum (separated into several categories in electron $|\eta|$)~\cite{note:AN_19_257}.}
     \label{fig:hlteff_electron}
  \end{center}
  \end{figure}
 
 \section{Data Quality Issues}
 \label{sec:data_quality}
-\hspace{10pt} Midway during the 2018 era of data taking, an incident occurred at the CMS experiment, leaving a part of the HE unresponsive. In terms of detector geometry, this meant that no HCAL information was available in the $-90^\circ<\phi<-50^\circ$ and $-3.0<\eta<-1.4$ region (HE sectors 15/16). This has affected $\sim$65~\% of the collected data during this era and has caused major concerns about its impact on the analysis. This effect was observed and treated in one of the control regions (more in Section~\ref{sec:single_electron}), but the main worry was coming from the SR. In order to be able to derive a proper mitigation for this effect, a blueprint involving unblinding 1/5th of the data was approved. It allowed for a look into "safe" variables that would show the effect of this problem, while not being one of the main dijet variables (removing the possibility of a biased strategy).
+\hspace{10pt} Midway during the 2018 era of data taking, an incident occurred at the CMS experiment, leaving a part of the HE unresponsive. In terms of detector geometry, this meant that no HCAL information was available in the $-90^\circ<\phi<-50^\circ$ and $-3.0<\eta<-1.4$ region (HE sectors 15/16). This has affected $\sim$~65~\% of the collected data during this era and has caused major concerns about its impact on the analysis. This effect was observed and treated in one of the control regions (more in Section~\ref{sec:single_electron}), but the main concern was the SR. In order to be able to derive a proper mitigation for this effect, a blueprint involving unblinding 1/5th of the data was approved. It allowed for a look into "safe" variables that would show the effect of this problem, while not being one of the main dijet variables (removing the possibility of a biased strategy).
 
 \hspace{10pt} Additional motivation for this approach was also fueled by the desire to check for the appearance of the effect called the jet "horns". It is represented with a large number of events with jets being reconstructed in the $2.8<|\eta|<3.2$ region for data only (not being well modelled in the simulation). The following paragraphs summarise the strategies that were the result of this unblinding.
 
@@ -387,7 +363,7 @@ where the iteration goes over each electron in the collection, allowing for easi
 
 
 
-\hspace{10pt} In order to look for a proper mitigation approach, various techniques for computing the $E_{T, miss}$ were checked (based on the set of particles entering the computation). As explained in Section~\ref{sec:objects}, the offline $E_{T,miss}$ is computed using all PF objects. A restriction, allowing only objects which are registered by the tracker into the calculation of $E_{T,miss}$, would give a better control of the problem, as the difference between the two includes the neutrally charged PF candidates. This difference is well accounted for in the simulation, leading to the conclusion that any significant deviations from the expected behaviour can be associated largely to these low quality jets.
+\hspace{10pt} In order to look for a proper mitigation approach, various techniques for computing the $E_{T, miss}$ were checked (based on the set of particles entering the computation). As explained in Section~\ref{sec:pf_met_reconstruction}, the offline $E_{T,miss}$ is computed using all PF objects. A restriction, allowing only objects which are registered by the tracker into the calculation of $E_{T,miss}$, would give a better control of the problem, as the difference between the two includes the neutrally charged PF candidates. This difference is well accounted for in the simulation, leading to the conclusion that any significant deviations from the expected behaviour can be associated largely to these low quality jets.
 
 \hspace{10pt} Figure~\ref{fig:met_vs_tkmet_2017} shows distributions of the relative difference between the tracker ($E_{T,miss}^{~track}$) and the standard $E_{T, miss}$. It can be seen that a large deviation from the expected simulation behaviour is observed in the region where this difference is larger than 0.8. Using the aforementioned region in order to contain the jet behavior, a requirement that a jet within the 2.8~$<|\eta|<$~3.2 region has to have value of 1-$E_{T,miss}^{~track}$/$E_{T, miss}<$~0.8  was introduced into the existing set of analysis requirements for both categories.
 
@@ -399,11 +375,22 @@ where the iteration goes over each electron in the collection, allowing for easi
     \subfigure[1-$E_{T,miss}^{~track}$/$E_{T, miss}$ - VTR]{
     \includegraphics[width=0.49\textwidth]{Analysis_strategy/2017_preHornCut/VTRTkMET_reldiff_MET_log.pdf}
     }
-  \caption{Distributions of the 1-$E_{T,miss}^{~track}$/$E_{T, miss}$ variable in the signal region after the unbinding of 1/5th of the 2017 data. Both MTR (left) and VTR categories are represented.}
+  \caption{Distributions of the 1-$E_{T,miss}^{~track}$/$E_{T, miss}$ variable in the signal region after the unbinding of 1/5th of the 2017 data. Both MTR (a) and VTR (b) categories are represented.}
   \label{fig:met_vs_tkmet_2017}
 \end{figure}
+\hspace{10pt} Figures~\ref{fig:jet_eta_postHornCut} and~\ref{fig:2017_postHornCut_met_vs_tkmet} show the distribution of jet eta (for both the leading and subleading jets) and the 1-$E_{T,miss}^{~track}$/$E_{T, miss}$ relation after the inclusion of the aforementioned requirement, showcasing the mitigation power of this choice which led to a significantly diminished effect of jet "horns". All of the presented distributions used to illustrate this effect are related to the 2017 era, while the equivalent set representing the 2018 era is given in Appendix~\ref{app:MTR_2018}. This mitigation process led to a small loss of signal efficiency. Computed using the simulated samples of signal processes, it impacted the VBF production by $\sim$8~\% and gluon-fusion by $\sim$1\% of signal efficiency loss, leading to a combined value of 4\%.
 
-\hspace{10pt} Figures~\ref{fig:jet_eta_postHornCut} and~\ref{fig:2017_postHornCut_met_vs_tkmet} show the distribution of jet eta (for both the leading and subleading jets) and the 1-$E_{T,miss}^{~track}$/$E_{T, miss}$ relation after the inclusion of the aforementioned requirement, showcasing the mitigation power of this choice which led to a significantly diminished effect of jet "horns". All of the presented distributions used to illustrate this effect are related to the 2017 era, while the equivalent set representing the 2018 era is given in Appendix A. This mitigation process led to a small loss of signal efficiency. Computed using the simulated samples of signal processes, it impacted the VBF production by $\sim$8~\% and gluon-fusion by $\sim$1\% of signal efficiency loss, leading to a combined value of 4\%.
+\hspace{10pt} Lastly, the unblinding process for this analysis has brought an observation of an excess in the high $m_{jj}$ values. In order to investigate this behaviour a set studies was performed leading to the conclusion that this excess was connected to two main sources: detector noise in the endcap region (mostly affecting the 2017 data) and a localised excess for the scenario where both of the jets are within the HF $\eta$ area\footnote{Translating into jet $|\eta|>$~3.0.}. As the treatment of the HF-HF jet scenario requires more studies, it has been removed from the analysis for the purposes of this thesis. In order to battle the resulting detector noise, an additional set of quality criteria was added. Similarly to the previously introduced jet horns treatment, they revolve around the $E_{T,miss}$ variables:
+\begin{equation}
+    \Delta\phi_{E_{T,miss}} = \Delta\phi(E_{T,miss}^{~track}, E_{T, miss}),
+\end{equation}
+\begin{equation}
+    B = \frac{|\vec{H}_{T,miss}-\vec{p}_{T,miss}|}{|\vec{H}_{T,miss}+\vec{p}_{T,miss}|},
+\end{equation}
+\begin{equation}
+    \Delta\phi B = \sqrt{(X\cdot B)^2+\Delta\phi_{E_{T,miss}}^2},
+\end{equation}
+where the X takes the value od 3.3 (6.6) for the MTR (VTR) category\footnote{This constant term was introduced in order to have the option of a circular requirement by controlling the $\Delta\phi B$. Additionally, a set of jet quality cuts is also applied on the leading pair.}. The final addition to the selection requirements is the $B<$~0.2 (for the scenarios where one jet is in the HF region) and $\Delta\phi B <$~1 (1.3) for the rest.
 
 \begin{figure}[htbp]
   \centering
@@ -432,14 +419,14 @@ where the iteration goes over each electron in the collection, allowing for easi
     \subfigure[1-$E_{T,miss}^{~track}$/$E_{T, miss}$ - VTR]{
     \includegraphics[width=0.49\textwidth]{Analysis_strategy/2017_postHornCut/VTRTkMET_reldiff_MET_log.pdf}
     }
-  \caption{Distributions of the 1-$E_{T,miss}^{~track}$/$E_{T, miss}$ variable in the signal region after the unbinding of 1/5th of the 2017 data and the mitigation of the jet "horns" effect. Both MTR (left) and VTR categories are represented.}
+  \caption{Distributions of the 1-$E_{T,miss}^{~track}$/$E_{T, miss}$ variable in the signal region after the unbinding of 1/5th of the 2017 data and the mitigation of the jet "horns" effect. Both MTR (a) and VTR (b) categories are represented.}
   \label{fig:2017_postHornCut_met_vs_tkmet}
 \end{figure}
 
 \subsection{Missing HE sectors}
 \hspace{10pt} The incident leaving a large amount of data collected during 2018 without any information about HCAL sectors 15/16 was the main motivation driving these, partial unblinding, studies. Being interested in forward jets, this analysis was especially affected in two regions, the signal and the electron regions. The latter is discussed in more detail in Section~\ref{sec:single_electron}. The reason why this is problematic is connected with the position of the subdetectors, The affected region, observed from the point of view of the jet $\eta$ is -2.5$<\eta<$-1.4, thus marking an area which has a higher probability of jets being mistaken for electrons.
 
-\hspace{10pt} Another potential problem occurs if the PF candidate in the problematic range fails to be associated with the ECAL cluster of tracks. Following that there is no HCAL information in this HE-minus (HEM) region, this can be seen in the appearance of mismeasured $E_{T,miss}$ populating the $\phi$ area covered by the HEM region. In order to test the SR for problems associated with the HEM region, the distribution of the $\phi$ variable associated with the $\vec{p}_{T, miss}$ has been studied. Figure~\ref{fig:hem_met} shows the data to simulation comparison of this variable for both the MTR and VTR categories, indicating a significant discrepancy in the -1.8$<\phi<$-0.6 region. Figure~\ref{fig:jet_phi_preHEM} shows the appearance of a similar discrepancy for the leading/subleading jet $\phi$ in the opposite side in $\phi$, as influenced by the signal selection. 
+\hspace{10pt} Another potential problem occurs if the PF candidate in the problematic range fails to be associated with the ECAL cluster of tracks. Following that there is no HCAL information in this HE-minus (HEM) region, this can be seen in the appearance of mismeasured $E_{T,miss}$ populating the $\phi$ area covered by the HEM region. In order to test the SR for problems associated with the HEM region, the distribution of the $\phi$ variable associated with the $\vec{p}_{T, miss}$ has been studied. Figure~\ref{fig:hem_met} shows the data to simulation comparison of this variable for both the MTR and VTR categories, indicating a significant discrepancy in the -1.8~$<\phi<$~-0.6 region. Figure~\ref{fig:jet_phi_preHEM} shows the appearance of a similar discrepancy for the leading/subleading jet $\phi$ in the opposite side in $\phi$, as influenced by the signal selection. 
 
 
 \begin{figure}[htbp]
@@ -450,13 +437,13 @@ where the iteration goes over each electron in the collection, allowing for easi
     \subfigure[$E_{T,miss}$ - VTR]{
     \includegraphics[width=0.49\textwidth]{Analysis_strategy/preHEMveto/VTRMET_phi_log.pdf}
     }
-  \caption{Distributions of the $E_{T,miss}$ variable for the signal region presenting effects of the HEM problem for MTR (left) and VTR (right) categories.  }
+  \caption{Distributions of the $E_{T,miss}$ variable for the signal region presenting effects of the HEM problem for MTR (a) and VTR (b) categories.  }
   \label{fig:hem_met}
 \end{figure}
 
 
 
-\hspace{10pt} Upon performing a selection of studies with different jet quality requirements~\cite{note:AN_19_257}, the simplest solution was chosen for the end result. The whole $\phi$ region of the $\vec{p}_{T, miss}$ affected by the HEM problem was rejected from the selection requirements for the SR. Figure~\ref{fig:jet_phi_postHEM} shows distributions of leading and subleading jet $\phi$ after the application of the aforementioned veto. This has helped to return the overall data to simulaton agreement to the expected ranges, but it also brought in a loss sensitivity with respect to the B(H$\rightarrow$inv.) of $\sim$11~\%. The resulting veto was also added to the selection requirements for the 2018 era for both categories.
+\hspace{10pt} Upon performing a selection of studies with different jet quality requirements~\cite{note:AN_19_257}, the simplest solution was chosen for the end result. The whole $\phi$ region of the $\vec{p}_{T, miss}$ affected by the HEM problem was rejected from the selection requirements for the SR. Figure~\ref{fig:jet_phi_postHEM} shows distributions of leading and subleading jet $\phi$ after the application of the aforementioned veto. This has helped to return the overall data to simulation agreement to the expected ranges, but it also brought in a loss of sensitivity with respect to the Br(H$\rightarrow$inv) of $\sim$11~\%. The resulting veto was added to the selection requirements for the 2018 era for both categories.
 
 \begin{figure}[htbp]
   \centering

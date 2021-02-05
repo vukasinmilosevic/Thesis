@@ -3,9 +3,9 @@
 \epigraph{\itshape``Noise proves nothing. Often a hen who has merely laid an egg cackles as if she laid an asteroid."}{--- \textup{Mark Twain}}
 
 \section{Introduction}
-\hspace{10pt} The approach taken for the estimation of the main sources of backgrounds, originating from V+jets SM processes, is to use a set of dedicated control regions (CR) dominated by each of these processes. The irreducible contribution of these Z$(\nu\nu)$+jets and W($l\nu$)+jets (where the charged lepton is unidentified by the detector) SM background are estimated using a set of well identified lepton control regions that are associated with the same dijet properties as the ones used for the definition of both SR categories.
+\hspace{10pt}\lettrine[lines=2]{\initfamily{T}}{he approach taken} for the estimation of the main sources of backgrounds, originating from V+jets SM processes, is to use a set of dedicated control regions (CR) dominated by each of these processes. The irreducible contribution of these Z$(\nu\nu)$+jets and W($l\nu$)+jets (where the charged lepton is unidentified by the detector) SM backgrounds is estimated using a set of well identified lepton control regions that are associated with the same dijet properties as the ones used for the definition of both SR categories.
 
-\hspace{10pt} Regions are selected to be orthogonal to each other, bearing similarities to the SR in order to ensure a smooth transition between the information obtained from the CR and the final estimation in the SR. The advantage of this approach is the usage of $E_{T, miss}$ where the leptons have been removed from the computation (as previously defined in Section~\ref{subsec:mtr_triggers}), which ensures the preservation of the VBF-like selection. Following sections will further explain the definition of each of these regions.
+\hspace{10pt} Regions are selected to be orthogonal to each other, bearing similarities to the SR in order to ensure a smooth transition between the information obtained from the CR and the final estimation in the SR. The advantage of this approach is the usage of $E_{T, miss}$ where the leptons have been removed from the computation (as previously defined in Section~\ref{subsec:mtr_triggers}), which ensures the preservation of the VBF-like selection. Following sections further explain the definition of each of these regions.
 
 \hspace{10pt} In addition to the main V+jets backgrounds, there is one more SM source of background that requires special attention. The QCD multijet processes present a problem due to the lack of statistical precision in their corresponding simulation samples, requiring an estimation from regions enriched with contributions from these processes. The formation of the of these dedicated QCD enriched regions and the methodology behind their usage in the final extrapolation to the SR are also the focus of few of the following pages.
 
@@ -13,7 +13,7 @@
 \hspace{10pt} Focusing on regions dedicated to the estimation of V+jets influence on the SR, the upcoming sections are going to introduce the four main lepton CRs, which can be grouped into two categories based on their targeted processes: the double and single lepton CRs. The idea behind the double lepton regions is to provide a good tool when tackling the Z$(\nu\nu)$+jets processes, while the single lepton regions take over the responsibilities associated with the W($l\nu$)+jets processes. Their respective definitions, focusing on further separation using lepton flavour, are going to be summarised in the following sections.
 
 \subsection{Double muon CR}
-\hspace{10pt} As described in the introduction, the double muon CR is used to determine the Z$(\nu\nu)$+jets background. This region is formed by replacing the muon veto selection requirement from VTR and MTR selections (Tables~\ref{tab:selection_mtr} and~\ref{tab:selection_vtr}) with a requirement that there are exactly two muon objects in the event. At least one of these two objects must pass the tight requirements defined in Section~\ref{sec:objects}. Additional selection requirements are imposed on muon $p_T$ with thresholds being set at $p_T>$20/10~GeV for the leading/subleading muon respectively (connected to the tight muon requirements). The final item is related to the formation of a dilepton mass region around the value of the Z boson mass, imposing a 60~$<m_{ll}<$~120~GeV requirement.
+\hspace{10pt} As described in the introduction, the double muon CR is used to estimate the Z$(\nu\nu)$+jets background. This region is formed by replacing the muon veto selection requirement from VTR and MTR selections (Tables~\ref{tab:selection_mtr} and~\ref{tab:selection_vtr}) with a requirement that there are exactly two muon objects in the event. At least one of these two objects must pass the tight requirements defined in Section~\ref{subsec:muons}. Additional selection requirements are imposed on muon $p_T$ with thresholds being set at $p_T>$20/10~GeV for the leading/subleading muon respectively (connected to the tight muon requirements). The final item is related to the formation of a dilepton mass region around the value of the Z boson mass, imposing a 60~$<m_{ll}<$~120~GeV requirement.
 
 \hspace{10pt} Figures~\ref{fig:2017_Zmumu_1} and~\ref{fig:2018_Zmumu_1} show the distributions of invariant masses of dilepton and dijet objects for both the MTR and VTR selection for both 2017 and 2018 eras. Overall good data to simulation agreement is observed for both variables in all categories, with the agreement being within the values controlled by the final fit. The much lower number of events in the VTR category originates from a set of higher $p_T$ thresholds included in VTR selection requirements.
 
@@ -33,7 +33,7 @@
     \subfigure[$m_{jj}$ - VTR]{
     \includegraphics[width=0.49\textwidth]{Control_Regions/2017_VTR/Zmumu/lMjj.pdf}
     }
-  \caption{Distributions of $m_{ll}$ and $m_{jj}$ variables in double muon region for MTR (top) and VTR (bottom) categories for the 2017 era of data taking.}
+  \caption{Distributions of $m_{ll}$ and $m_{jj}$ variables in the double muon region for MTR (top) and VTR (bottom) categories for the 2017 era of data taking.}
   \label{fig:2017_Zmumu_1}
 \end{figure}
 
@@ -51,48 +51,48 @@
     \subfigure[$m_{jj}$ - VTR]{
     \includegraphics[width=0.49\textwidth]{Control_Regions/2018_VTR/Zmumu/lMjj.pdf}
     }
-  \caption{Distributions of $m_{ll}$ and $m_{jj}$ variables in double muon region for MTR (top) and VTR (bottom) categories for the 2018 era of data taking.}
+  \caption{Distributions of $m_{ll}$ and $m_{jj}$ variables in the double muon region for MTR (top) and VTR (bottom) categories for the 2018 era of data taking.}
   \label{fig:2018_Zmumu_1}
 \end{figure}
 
 
 \begin{figure}[htbp]
   \centering
-    \subfigure[$E_{T,miss}$ - MTR]{
+    \subfigure[$E_{T,miss}^{no,\mu}$ - MTR]{
     \includegraphics[width=0.49\textwidth]{Control_Regions/2017_MTR/Zmumu/MetNoMu.pdf}
     }
-    \subfigure[$min\Delta\phi(j,E_{T,miss})$ - MTR]{
+    \subfigure[$min\Delta\phi(j,E_{T,miss}^{no,\mu})$ - MTR]{
     \includegraphics[width=0.49\textwidth]{Control_Regions/2017_MTR/Zmumu/MetNoLep_CleanJet_mindPhi.pdf}
     }\\
-    \subfigure[$E_{T,miss}$ - VTR]{
+    \subfigure[$E_{T,miss}^{no,\mu}$ - VTR]{
     \includegraphics[width=0.49\textwidth]{Control_Regions/2017_VTR/Zmumu/MetNoMu.pdf}
     }
-    \subfigure[$min\Delta\phi(j,E_{T,miss})$ - VTR]{
+    \subfigure[$min\Delta\phi(j,E_{T,miss}^{no,\mu})$ - VTR]{
     \includegraphics[width=0.49\textwidth]{Control_Regions/2017_VTR/Zmumu/MetNoLep_CleanJet_mindPhi.pdf}
     }
-  \caption{Distributions of the $E_{T,miss}$ and $min\Delta\phi(j,E_{T,miss})$  variables in double muon region for MTR (top) and VTR (bottom) categories for the 2017 era of data taking.}
+  \caption{Distributions of the $E_{T,miss}^{no,\mu}$ and $min\Delta\phi(j,E_{T,miss}^{no,\mu})$ variables in the double muon region for MTR (top) and VTR (bottom) categories for the 2017 era of data taking.}
   \label{fig:2017_Zmumu_2}
 \end{figure}
 
 
 \begin{figure}[htbp]
   \centering
-    \subfigure[$E_{T,miss}$ - MTR]{
+    \subfigure[$E_{T,miss}^{no,\mu}$ - MTR]{
     \includegraphics[width=0.49\textwidth]{Control_Regions/2018_MTR/Zmumu/MetNoMu.pdf}
     }
-    \subfigure[$min\Delta\phi(j,E_{T,miss})$ - MTR]{
+    \subfigure[$min\Delta\phi(j,E_{T,miss}^{no,\mu})$ - MTR]{
     \includegraphics[width=0.49\textwidth]{Control_Regions/2018_MTR/Zmumu/MetNoLep_CleanJet_mindPhi.pdf}
     }\\
-    \subfigure[$E_{T,miss}$ - VTR]{
+    \subfigure[$E_{T,miss}^{no,\mu}$ - VTR]{
     \includegraphics[width=0.49\textwidth]{Control_Regions/2018_VTR/Zmumu/MetNoMu.pdf}
     }
-    \subfigure[$min\Delta\phi(j,E_{T,miss})$ - VTR]{
+    \subfigure[$min\Delta\phi(j,E_{T,miss}^{no,\mu})$ - VTR]{
     \includegraphics[width=0.49\textwidth]{Control_Regions/2018_VTR/Zmumu/MetNoLep_CleanJet_mindPhi.pdf}
     }
-  \caption{Distributions of the $E_{T,miss}$ and $min\Delta\phi(j,E_{T,miss})$ variables in double muon region for MTR (top) and VTR (bottom) categories for the 2018 era of data taking.}
+  \caption{Distributions of the $E_{T,miss}^{no,\mu}$ and $min\Delta\phi(j,E_{T,miss}^{no,\mu})$ variables in the double muon region for MTR (top) and VTR (bottom) categories for the 2018 era of data taking.}
   \label{fig:2018_Zmumu_2}
 \end{figure}
-\hspace{10pt} This is evident in 2018, where there is a complete absence of any excess originating from the HEM problem, which can be tested by taking a look at $\phi$ variables for $\vec{p}_{T, miss}$ and the leading jet (shown in Figure~\ref{fig:Zmumu_noHEM} for the MTR category). The influence of QCD multijet processes is also diminished by these conditions for both eras. Additional distributions showing leading and subleading muon properties as well as more detailed jet information are presented in Appendix~\ref{app:CRs}.
+\hspace{10pt} This is evident in 2018, where there is a complete absence of any excess originating from the HEM problem, which can be tested by taking a look at $\phi$ variables for $\vec{p}_{T, miss}$ (shown in Figure~\ref{app:Zmumu_noHEM} for the MTR category). The influence of QCD multijet processes is also diminished by these conditions for both eras. Additional distributions showing leading and muon ($p_T$/$\eta$) properties are presented in Appendix~\ref{app:CRs}.
 
 \subsection{Single muon CR}
 \label{sec:single_muon}
@@ -108,7 +108,7 @@ where the $m_i$, $E_{T,i}$ and $p_{T_i}$ denote the mass, the transverse energy 
 \begin{equation}
     M_T= \sqrt{2\cdot(E_{T_1}E_{T_2}(1-cos\theta))},
 \end{equation}
-where $\theta$ represents the angle between two transverse momentum vectors. For the purposes of this region, two physics objects considered in the aforementioned calculation are going to be the $\vec{p}_{T, miss}$ and the transverse momentum of the selected muon. In the past, this variable (in further text referred to as $M_{T, \mu}$) proved, in W boson studies, useful for the control of the contribution originating from the QCD multijet processes. Presented alongside the \mindphinomu~variable in Figures~\ref{fig:2017_Wmunu_2} and~\ref{fig:2018_Wmunu_2}, for 2017 and 2018 eras respectively, it shows good agreement between data and simulation and significantly reduced QCD multijet contribution (requiring no additional requirement for this region).
+where $\theta$ represents the angle between two transverse momentum vectors. For the purposes of this region, two physics objects considered in the aforementioned calculation are going to be the $\vec{p}_{T, miss}^{~no,\mu}$ and the transverse momentum of the selected muon. In the past, this variable (in further text referred to as $M_{T, \mu}$) proved useful, in W boson studies, for the control of the contribution originating from the QCD multijet processes. Presented alongside the \mindphinomu~variable in Figures~\ref{fig:2017_Wmunu_2} and~\ref{fig:2018_Wmunu_2}, for 2017 and 2018 eras respectively, it shows good agreement between data and simulation and significantly reduced QCD multijet contribution (requiring no additional requirement for this region).
 
 
 %It was previously used as an additional selection requirement of $M_{T, \mu}<$~160~GeV in order to remove the data to simulation discrepancy seen in the high $M_T$ region. 
@@ -128,7 +128,7 @@ where $\theta$ represents the angle between two transverse momentum vectors. For
     \subfigure[$E_{T,miss}$ - VTR]{
     \includegraphics[width=0.49\textwidth]{Control_Regions/2017_VTR/Wmunu/MetNoMu.pdf}
     }
-  \caption{Distributions of $mjj$ and $E_{T,miss}$ variables in single muon region for MTR (top) and VTR (bottom) categories for the 2017 era of data taking.}
+  \caption{Distributions of $mjj$ and $E_{T,miss}$ variables in the single muon region for MTR (top) and VTR (bottom) categories for the 2017 era of data taking.}
   \label{fig:2017_Wmunu_1}
 \end{figure}
 
@@ -146,7 +146,7 @@ where $\theta$ represents the angle between two transverse momentum vectors. For
     \subfigure[$E_{T,miss}$ - VTR]{
     \includegraphics[width=0.49\textwidth]{Control_Regions/2018_VTR/Wmunu/MetNoMu.pdf}
     }
-  \caption{Distributions of $mjj$ and $E_{T,miss}$ variables in single muon region for MTR (top) and VTR (bottom) categories for the 2018 era of data taking.}
+  \caption{Distributions of $mjj$ and $E_{T,miss}$ variables in the single muon region for MTR (top) and VTR (bottom) categories for the 2018 era of data taking.}
   \label{fig:2018_Wmunu_1}
 \end{figure}
 
@@ -162,10 +162,10 @@ where $\theta$ represents the angle between two transverse momentum vectors. For
     \subfigure[$M_{T,\mu}$ - VTR]{
     \includegraphics[width=0.49\textwidth]{Control_Regions/2017_VTR/Wmunu/MTmu_FAST.pdf}
     }
-    \subfigure[\mindphinomu - VTR]{
+    \subfigure[\mindphinomu~- VTR]{
     \includegraphics[width=0.49\textwidth]{Control_Regions/2017_VTR/Wmunu/MetNoLep_CleanJet_mindPhi.pdf}
     }
-  \caption{Distributions of $M_{T,\mu}$ and \mindphinomu variables in single muon region for MTR (top) and VTR (bottom) categories for the 2017 era of data taking.}
+  \caption{Distributions of $M_{T,\mu}$ and \mindphinomu~variables in the single muon region for MTR (top) and VTR (bottom) categories for the 2017 era of data taking.}
   \label{fig:2017_Wmunu_2}
 \end{figure}
 
@@ -180,10 +180,10 @@ where $\theta$ represents the angle between two transverse momentum vectors. For
     \subfigure[$M_{T,\mu}$ - VTR]{
     \includegraphics[width=0.49\textwidth]{Control_Regions/2018_VTR/Wmunu/MTmu_FAST.pdf}
     }
-    \subfigure[\mindphinomu - VTR]{
+    \subfigure[\mindphinomu~- VTR]{
     \includegraphics[width=0.49\textwidth]{Control_Regions/2018_VTR/Wmunu/MetNoLep_CleanJet_mindPhi.pdf}
     }
-  \caption{Distributions of $M_{T,\mu}$ and \mindphinomu variables in single muon region for MTR (top) and VTR (bottom) categories for the 2018 era of data taking.}
+  \caption{Distributions of $M_{T,\mu}$ and \mindphinomu~variables in the single muon region for MTR (top) and VTR (bottom) categories for the 2018 era of data taking.}
   \label{fig:2018_Wmunu_2}
 \end{figure}
 
@@ -191,12 +191,12 @@ where $\theta$ represents the angle between two transverse momentum vectors. For
 
 
 
-\hspace{10pt} Similarly to the double muon region, the single muon region is not affected by the HEM issue in 2018 due to the tight muon requirement. Figures [A.R] confirm this, showing no significant excess in the affected $(\eta, \phi)$ range. The following sections introduce electron regions where, for the single electron case, this effect will require special attention.
+\hspace{10pt} Similarly to the double muon region, the single muon region is not affected by the HEM issue in 2018 due to the tight muon requirement. Figure~\ref{app:Wmunu_noHEM} confirms this, showing no significant excess in the affected $(\eta, \phi)$ range for the MTR category. The following sections introduce electron regions where, for the single electron case, this effect will require special attention.
 
 \subsection{Double electron CR}
-\hspace{10pt} The first step, when adapting the double lepton region structure for the purposes of the electron case, is to modify the electron veto from the SR selection requirements. It requires exactly two electrons in the event, at least one of which needs to satisfy tight requirements, while both of them have to follow the $p_T>$~40/10~GeV thresholds for the leading/subleading electron, respectively. Upon selecting the objects, the dilepton mass requirement of 60$~<m_{ll}<~$120~GeV is applied.
+\hspace{10pt} The first step, when adapting the double lepton region structure for the purposes of the electron case, is to modify the electron veto from the SR selection requirements. It asks for exactly two electrons in the event, at least one of which needs to satisfy tight requirements, while both of them have to follow the $p_T>$~40/10~GeV thresholds for the leading/subleading electron, respectively. Upon selecting the objects, the dilepton mass requirement of 60$~<m_{ll}<~$120~GeV is applied.
 
-\hspace{10pt} Figures~\ref{fig:2017_Zee_1} and~\ref{fig:2017_Zee_2} show the $m_{jj}$ and $m_{ll}$ distributions for both categories and both eras of data taking. The $m_{jj}$ variable shows a good level of agreement between data and simulation. Additionally, Figures~\ref{fig:2017_Zee_2} and~\ref{fig:2018_Zee_2} show the data to prediction agreement for the \mindphinoe~and $E_{T, miss}^{no, e}$. The latter is defined in the same way as its muon counterpart, by eliminating the contribution from the electron objects when computing it.
+\hspace{10pt} Figures~\ref{fig:2017_Zee_1} and~\ref{fig:2017_Zee_2} show the $m_{ll}$ and $m_{jj}$ distributions for both categories and both eras of data taking. The $m_{jj}$ variable shows a good level of agreement between data and simulation. Additionally, Figures~\ref{fig:2017_Zee_2} and~\ref{fig:2018_Zee_2} show the data to prediction agreement for the \mindphinoe~and $E_{T, miss}^{no, e}$ (with the rest of the distributions being shown in Appendix~\ref{app:CRs}). The latter is defined in the same way as its muon counterpart, by eliminating the contribution from the electron objects when computing it.
 
 \hspace{10pt} As was the case for the double muon CR, this region is unaffected by the HEM problem in 2018 due to very tight requirements in the form of the electron identification and the dilepton mass. The previous reasoning also accounts for the lack of contribution originating from QCD multijet processes.
 
@@ -215,7 +215,7 @@ where $\theta$ represents the angle between two transverse momentum vectors. For
     \subfigure[$m_{jj}$ - VTR]{
     \includegraphics[width=0.49\textwidth]{Control_Regions/2017_VTR/Zee/lMjj.pdf}
     }
-  \caption{Distributions of $m_{ll}$ and $m_{jj}$ variables in double muon region for MTR (top) and VTR (bottom) categories for the 2017 era of data taking.}
+  \caption{Distributions of $m_{ll}$ and $m_{jj}$ variables in the double muon region for MTR (top) and VTR (bottom) categories for the 2017 era of data taking.}
   \label{fig:2017_Zee_1}
 \end{figure}
 
@@ -233,45 +233,45 @@ where $\theta$ represents the angle between two transverse momentum vectors. For
     \subfigure[$m_{jj}$ - VTR]{
     \includegraphics[width=0.49\textwidth]{Control_Regions/2018_VTR/Zee/lMjj.pdf}
     }
-  \caption{Distributions of $m_{jj}$ and $m_{ll}$ variables in double muon region for MTR (top) and VTR (bottom) categories for the 2018 era of data taking.}
+  \caption{Distributions of $m_{ll}$ and $m_{jj}$ variables in the double muon region for MTR (top) and VTR (bottom) categories for the 2018 era of data taking.}
   \label{fig:2018_Zee_1}
 \end{figure}
 
 
 \begin{figure}[htbp]
   \centering
-    \subfigure[$E_{T,miss}$ - MTR]{
+    \subfigure[$E_{T,miss}^{no,e}$ - MTR]{
     \includegraphics[width=0.49\textwidth]{Control_Regions/2017_MTR/Zee/MetNoMu.pdf}
     }
-    \subfigure[$min\Delta\phi(j,E_{T,miss})$ - MTR]{
+    \subfigure[$min\Delta\phi(j,E_{T,miss}^{no,e})$ - MTR]{
     \includegraphics[width=0.49\textwidth]{Control_Regions/2017_MTR/Zee/MetNoLep_CleanJet_mindPhi.pdf}
     }\\
-    \subfigure[$E_{T,miss}$ - VTR]{
+    \subfigure[$E_{T,miss}^{no,e}$ - VTR]{
     \includegraphics[width=0.49\textwidth]{Control_Regions/2017_VTR/Zee/MetNoMu.pdf}
     }
-    \subfigure[$min\Delta\phi(j,E_{T,miss})$ - VTR]{
+    \subfigure[$min\Delta\phi(j,E_{T,miss}^{no,e})$ - VTR]{
     \includegraphics[width=0.49\textwidth]{Control_Regions/2017_VTR/Zee/MetNoLep_CleanJet_mindPhi.pdf}
     }
-  \caption{Distributions of $E_{T,miss}$ and $min\Delta\phi(j,E_{T,miss})$ variables in the double muon region for MTR (top) and VTR (bottom) categories for the 2017 era of data taking.}
+  \caption{Distributions of $E_{T,miss}^{no,e}$ and $min\Delta\phi(j,E_{T,miss}^{no,e})$ variables in the double muon region for MTR (top) and VTR (bottom) categories for the 2017 era of data taking.}
   \label{fig:2017_Zee_2}
 \end{figure}
 
 
 \begin{figure}[htbp]
   \centering
-    \subfigure[$E_{T,miss}$ - MTR]{
+    \subfigure[$E_{T,miss}^{no,e}$ - MTR]{
     \includegraphics[width=0.49\textwidth]{Control_Regions/2018_MTR/Zee/MetNoMu.pdf}
     }
-    \subfigure[$min\Delta\phi(j,E_{T,miss})$ - MTR]{
+    \subfigure[$min\Delta\phi(j,E_{T,miss}^{no,e})$ - MTR]{
     \includegraphics[width=0.49\textwidth]{Control_Regions/2018_MTR/Zee/MetNoLep_CleanJet_mindPhi.pdf}
     }\\
-    \subfigure[$E_{T,miss}$ - VTR]{
+    \subfigure[$E_{T,miss}^{no,e}$ - VTR]{
     \includegraphics[width=0.49\textwidth]{Control_Regions/2018_VTR/Zee/MetNoMu.pdf}
     }
-    \subfigure[$min\Delta\phi(j,E_{T,miss})$ - VTR]{
+    \subfigure[$min\Delta\phi(j,E_{T,miss}^{no,e})$ - VTR]{
     \includegraphics[width=0.49\textwidth]{Control_Regions/2018_VTR/Zee/MetNoLep_CleanJet_mindPhi.pdf}
     }
-  \caption{Distributions of $E_{T,miss}$ and $min\Delta\phi(j,E_{T,miss})$ variables in the double muon region for MTR (top) and VTR (bottom) categories for the 2018 era of data taking.}
+  \caption{Distributions of $E_{T,miss}^{no,e}$ and $min\Delta\phi(j,E_{T,miss}^{no,e})$ variables in the double muon region for MTR (top) and VTR (bottom) categories for the 2018 era of data taking.}
   \label{fig:2018_Zee_2}
 \end{figure}
 
@@ -292,18 +292,18 @@ where $\theta$ represents the angle between two transverse momentum vectors. For
 \begin{figure}[htbp]
   \centering
     \subfigure[$\eta_e$ - pre veto]{
-    \includegraphics[width=0.49\textwidth]{Control_Regions/HEM_motivation/Ele_eta_preVeto2018.png}
+    \includegraphics[width=0.49\textwidth]{Control_Regions/HEM_motivation/Ele_eta_preVeto2018.pdf}
     }
     \subfigure[$\phi_e$ - pre veto]{
-    \includegraphics[width=0.49\textwidth]{Control_Regions/HEM_motivation/Ele_phi_preVeto2018.png}
+    \includegraphics[width=0.49\textwidth]{Control_Regions/HEM_motivation/Ele_phi_preVeto2018.pdf}
     }\\
     \subfigure[$\eta_e$ - post veto]{
-    \includegraphics[width=0.49\textwidth]{Control_Regions/HEM_motivation/Ele_eta_postVeto2018.png}
+    \includegraphics[width=0.49\textwidth]{Control_Regions/HEM_motivation/Ele_eta_postVeto2018.pdf}
     }
     \subfigure[$\phi_e$ - post veto]{
-    \includegraphics[width=0.49\textwidth]{Control_Regions/HEM_motivation/Ele_phi_postVeto2018.png}
+    \includegraphics[width=0.49\textwidth]{Control_Regions/HEM_motivation/Ele_phi_postVeto2018.pdf}
     }
-  \caption{Distribution of electron $\eta$ and $\phi$ variables showing the pre (top) and post (bottom) veto mitigation results (presented for the MTR category).}
+  \caption{Distribution of electron $\eta$ and $\phi$ variables showing the pre (top) and post (bottom) veto mitigation results for the single electron region (presented for the MTR category).}
   \label{fig:2018_Wenu_HEM}
 \end{figure}
 
@@ -316,16 +316,16 @@ where $\theta$ represents the angle between two transverse momentum vectors. For
     \subfigure[$m_{jj}$ - MTR]{
     \includegraphics[width=0.49\textwidth]{Control_Regions/2017_MTR/Wenu/leadingJet_mjj.pdf}
     }
-    \subfigure[$E_{T,miss}$ - MTR]{
+    \subfigure[$E_{T,miss}^{no,e}$ - MTR]{
     \includegraphics[width=0.49\textwidth]{Control_Regions/2017_MTR/Wenu/MetNoMu.pdf}
     }\\
     \subfigure[$m_{jj}$ - VTR]{
     \includegraphics[width=0.49\textwidth]{Control_Regions/2017_VTR/Wenu/lMjj.pdf}
     }
-    \subfigure[$E_{T,miss}$ - VTR]{
+    \subfigure[$E_{T,miss}^{no,e}$ - VTR]{
     \includegraphics[width=0.49\textwidth]{Control_Regions/2017_VTR/Wenu/MetNoMu.pdf}
     }
-  \caption{Distributions of $mjj$ and $E_{T,miss}$ variables in single electron region for MTR (top) and VTR (bottom) categories for the 2017 era of data taking.}
+  \caption{Distributions of $mjj$ and $E_{T,miss}^{no,e}$ variables in single electron region for MTR (top) and VTR (bottom) categories for the 2017 era of data taking.}
   \label{fig:2017_Wenu_1}
 \end{figure}
 
@@ -334,16 +334,16 @@ where $\theta$ represents the angle between two transverse momentum vectors. For
     \subfigure[$m_{jj}$ - MTR]{
     \includegraphics[width=0.49\textwidth]{Control_Regions/2018_MTR/Wenu/leadingJet_mjj.pdf}
     }
-    \subfigure[$E_{T,miss}$ - MTR]{
+    \subfigure[$E_{T,miss}^{no,e}$ - MTR]{
     \includegraphics[width=0.49\textwidth]{Control_Regions/2018_MTR/Wenu/MetNoMu.pdf}
     }\\
     \subfigure[$m_{jj}$ - VTR]{
     \includegraphics[width=0.49\textwidth]{Control_Regions/2018_VTR/Wenu/lMjj.pdf}
     }
-    \subfigure[$E_{T,miss}$ - VTR]{
+    \subfigure[$E_{T,miss}^{no,e}$ - VTR]{
     \includegraphics[width=0.49\textwidth]{Control_Regions/2018_VTR/Wenu/MetNoMu.pdf}
     }
-  \caption{Distributions of $mjj$ and $E_{T,miss}$ variables in single electron region for MTR (top) and VTR (bottom) categories for the 2018 era of data taking.}
+  \caption{Distributions of $mjj$ and $E_{T,miss}^{no,e}$ variables in single electron region for MTR (top) and VTR (bottom) categories for the 2018 era of data taking.}
   \label{fig:2018_Wenu_1}
 \end{figure}
 
@@ -353,16 +353,16 @@ where $\theta$ represents the angle between two transverse momentum vectors. For
     \subfigure[$M_{T,e}$ - MTR]{
     \includegraphics[width=0.49\textwidth]{Control_Regions/2017_MTR/Wenu/MTe_FAST.pdf}
     }
-    \subfigure[\mindphinoe - MTR]{
+    \subfigure[\mindphinoe~- MTR]{
     \includegraphics[width=0.49\textwidth]{Control_Regions/2017_MTR/Wenu/MetNoLep_CleanJet_mindPhi.pdf}
     }\\
     \subfigure[$M_{T,e}$ - VTR]{
     \includegraphics[width=0.49\textwidth]{Control_Regions/2017_VTR/Wenu/MTe_FAST.pdf}
     }
-    \subfigure[\mindphinoe - VTR]{
+    \subfigure[\mindphinoe~- VTR]{
     \includegraphics[width=0.49\textwidth]{Control_Regions/2017_VTR/Wenu/MetNoLep_CleanJet_mindPhi.pdf}
     }
-  \caption{Distributions of $M_{T,e}$ and \mindphinoe variables in single electron region for MTR (top) and VTR (bottom) categories for the 2017 era of data taking.}
+  \caption{Distributions of $M_{T,e}$ and \mindphinoe~variables in single electron region for MTR (top) and VTR (bottom) categories for the 2017 era of data taking.}
   \label{fig:2017_Wenu_2}
 \end{figure}
 
@@ -371,16 +371,16 @@ where $\theta$ represents the angle between two transverse momentum vectors. For
     \subfigure[$M_{T,e}$ - MTR]{
     \includegraphics[width=0.49\textwidth]{Control_Regions/2018_MTR/Wenu/MTe_FAST.pdf}
     }
-    \subfigure[\mindphinoe - MTR]{
+    \subfigure[\mindphinoe~- MTR]{
     \includegraphics[width=0.49\textwidth]{Control_Regions/2018_MTR/Wenu/MetNoLep_CleanJet_mindPhi.pdf}
     }\\
     \subfigure[$M_{T,e}$ - VTR]{
     \includegraphics[width=0.49\textwidth]{Control_Regions/2018_VTR/Wenu/MTe_FAST.pdf}
     }
-    \subfigure[\mindphinoe - VTR]{
+    \subfigure[\mindphinoe~- VTR]{
     \includegraphics[width=0.49\textwidth]{Control_Regions/2018_VTR/Wenu/MetNoLep_CleanJet_mindPhi.pdf}
     }
-  \caption{Distributions of $M_{T,e}$ and \mindphinoe variables in single electron region for MTR (top) and VTR (bottom) categories for the 2018 era of data taking.}
+  \caption{Distributions of $M_{T,e}$ and \mindphinoe~variables in single electron region for MTR (top) and VTR (bottom) categories for the 2018 era of data taking.}
   \label{fig:2018_Wenu_2}
 \end{figure}
 
@@ -390,7 +390,7 @@ where $\theta$ represents the angle between two transverse momentum vectors. For
 
 \section{Dedicated QCD multijet region}
 
-\hspace{10pt} The main reason behind the problematic nature of QCD multijet processes is their high production rate at the LHC. They are not expected to contain a lot of events with the ability to pass the MTR/VTR selection requirements (especially due to the existence of the \mindphi~threshold), as they usually produce events which are well balanced in the transverse plane. Unfortunately, any mismeasurement of jet energy, poorly functioning detector regions or neutrinos from semileptonic decays of heavy-flavour mesons, coupled with large cross sections value, result in a non negligible amount of them containing VBF-like signature (energetic leading/subleading jets accompanied with a large $E_{T,miss}$ originating from these edge cases). 
+\hspace{10pt} The main reason behind the problematic nature of QCD multijet processes is their high production rate at the LHC. They are not expected to contain a lot of events with the ability to pass the MTR/VTR selection requirements (especially due to the existence of the \mindphi~threshold), as they usually produce events which are well balanced in the transverse plane. Unfortunately, any mismeasurement of jet energy, poorly functioning detector regions or neutrinos from semileptonic decays of heavy-flavour mesons, coupled with large cross section value, result in a non negligible amount of them containing VBF-like signature (energetic leading/subleading jets accompanied with a large $E_{T,miss}$ originating from these edge cases). 
 
 \hspace{10pt} Their contribution is significantly reduced in the lepton CRs through the use of the \mindphi~variable. In order to properly estimate this contribution in the SR (also bypassing the low statistical precision of simulation samples, by not relying simply on them), an extrapolation approach was deployed through the use of a region which is considered "enriched" in these processes. The following sections define this region and present two approaches to determine the background contribution, one of which is chosen for the final estimation, while the other is used as a cross check.
 
@@ -401,6 +401,7 @@ where $\theta$ represents the angle between two transverse momentum vectors. For
 \begin{equation}
     r = \frac{min\Delta\phi(j, E_{T,miss})>X}{min\Delta\phi(j, E_{T,miss})<X},
 \end{equation}
+
 where X denotes the threshold corresponding to each category, taking the value of 0.5 (1.8) for MTR (VTR) category respectively.
 
 \hspace{10pt} In order to obtain an estimation of the SR-related contribution, as well as to perform a set of closure tests, four orthogonal regions are introduced. They are defined with slight modifications of the MTR (VTR) selection by inverting the $min\Delta\phi(j, E_{T,miss})$ and $E_{T,miss}$ requirements, as shown in Table~\ref{tab:QCD_regions}.
@@ -421,9 +422,10 @@ Signal Region &  $min\Delta\phi(j, E_{T,miss})>$0.5 (1.8) and $E_{T,miss}>$250~G
 \caption{Definition of four regions used for the estimation of the total contribution of QCD multijet processes in the SR. Thresholds are presented for MTR (VTR) category respectively.\label{tab:QCD_regions} }
 \end{table}
 
-\hspace{10pt} For the purposes of this analysis two methods were tested. Both of them summarised in the following sections. The first depends both on the simulation samples and data, while the second one has no dependence on the simulated QCD multijet processes (making it the preferred option, due to the lack of statistical precision in the simulation samples).
+\hspace{10pt} For the purposes of this analysis two methods were tested. Both of them are summarised in the following sections. The first depends both on the simulation samples and data, while the second one has no dependence on the simulated QCD multijet processes (making it the preferred option, due to the lack of statistical precision in the simulation samples).
 
 \subsection{Method A}
+\label{sec:qcd_a}
 \hspace{10pt} The basis for this method is the, previously defined, factor $r$. Since the analysis relies on the $m_{jj}$ variable for the final fit, its definition will be expanded to appropriately reflect dependence on the dijet mass. It can be expressed in terms of $m_{jj}$ bins as: 
 \begin{equation}
     r(m_{jj}) = \frac{F_{SR}^{MC}(m_{jj})}{F_{QCD~CR}^{MC}(m_{jj})},
@@ -436,28 +438,54 @@ where the $F^{MC}_i$ denotes the $m_{jj}$ distributions of QCD multijet simulati
     N_{SR}^{QCD}(m_{jj}) = \left( N_{CR}^{Data}(m_{jj}) - \sum_i N^i_{CR}(m_{jj})\right)\cdot r(m_{jj}),
 \end{equation}
 
-where the sum goes over other backgrounds (V+jets, now a minor background in this region, $t\bar{t}$ and diboson processes). Following the strong dependence on the simulated sample (and due to its the lack of statistical precision), a more favourable method was searched for that would be only data driven. The following section define this method and its usage in further analysis steps.
+where the sum goes over other backgrounds (V+jets, now a minor background in this region, $t\bar{t}$ and diboson processes). Following the strong dependence on the simulated sample (and due to its the lack of statistical precision), a more favourable method was searched for that would be mostly data driven. The following section defines this method and its usage in further analysis steps.
 
 \subsection{Method B}
-\hspace{10pt} An alternative approach to method A is to remove the dependence on the QCD multijet simulation and instead rely only on a purely data driven estimation. For the purposes of this method, a fit procedure is deployed on the $min\Delta\phi(j, E_{T, miss})$ in its low region. The resulting fit function enables the extrapolation into the SR.
+\label{sec:qcd_b}
+\hspace{10pt} An alternative approach to method A is to remove the dependence on the QCD multijet simulation and instead rely only on a mostly data driven estimation\footnote{The simulated samples of other SM processes besides QCD multijet, which present a set of minor backgrounds in the QCD CR, have sufficient statistical precision to be used for the purposes of this method. This removes the constraint found in Method A where the main worry was assigned to the low statistical precision of multijet simulated samples.}. For the purposes of this method, a fit procedure is deployed on the $min\Delta\phi(j, E_{T, miss})$ in its low region. The resulting fit function enables the extrapolation into the SR.
 
 \hspace{10pt} Firstly, in order to have a good way of estimating the contribution of other backgrounds in the, QCD enriched, low $min\Delta\phi(j, E_{T, miss})$ region, a fit is performed on the combined contribution of V+jets, diboson and $t\bar{t}$ simulation samples. This fit is performed using a function defined as:
+
 \begin{equation}
     F_B(x)  = Q_0e^{-Q_1x}(1+Q_2x+Q_3x^2),
 \end{equation}
+
 where $Q_i$ denotes fit parameters, while $x$ represents the fit variable (in this situation $min\Delta\phi(j, E_{T, miss})$). The next step is to fit the data using a function defined as:
+
 \begin{equation}
     F(x) = F_B(x)+F_{QCD}(x) = Q_0e^{-Q_1x}(1+Q_2x+Q_3x^2)+P_0e^{-P_1x}+P_2,
 \end{equation}
-where the $P_i$ represent the new fit parameters. Through the usage of the information gained by fitting the smaller backgrounds, the parameters $Q_i$ are fixed when performing the fit in data, thus allowing for the definition of the $F_{QCD}(x)$ through the remaining $P_i$ parameters. In order to estimate the total contribution coming from QCD multijet processes in the SR, this newly obtained function $F_{QCD}(x)$ can be integrated over the SR, or in other words:
+
+where the $P_i$ represent the new fit parameters. Through the usage of the information gained by fitting the smaller backgrounds~\footnote{Smaller backgrounds only from the current, QCD CR, perspective, as V+jets are main irreducible backgrounds contributing to the SR.}, the parameters $Q_i$ are fixed when performing the fit in data, thus allowing for the definition of the $F_{QCD}(x)$ through the remaining $P_i$ parameters. In order to estimate the total contribution coming from QCD multijet processes in the SR, this newly obtained function $F_{QCD}(x)$ can be integrated over the SR, or in other words:
 \begin{equation}
     N_{QCD}^{SR} = \int_X^{\pi}F_{QCD}(x)dx,
 \end{equation}
-where the lower bound X takes the value of 0.5 (1.8) for MTR (VTR) category respectively. The actual implementation requires a separate fit procedure per category for each era. For the MTR category, a fit range of 0~$\leq min\Delta\phi(j,E_{T,miss})\leq$~1.0 is chosen, while the 0.5~$\leq min\Delta\phi(j,E_{T,miss})\leq$~1.0 range covers the VTR category fit strategy. The extended fit range used for the MTR category is enabled by the partial unblinding strategy defined in Section~\ref{sec:data_quality} and supported by the fact that this range is not expected to have any significant signal contribution.
+where the lower bound X takes the value of 0.5 (1.8) for MTR (VTR) category respectively. The actual implementation requires a separate fit procedure per category for each era. For the MTR category, a fit range of 0~$\leq min\Delta\phi(j,E_{T,miss})\leq$~1.0 is chosen, while the 0.5~$\leq min\Delta\phi(j,E_{T,miss})\leq$~1.0 range covers the VTR category fit strategy. The extended fit range used for the MTR category is enabled by the partial unblinding strategy defined in Section~\ref{sec:data_quality} and supported by the fact that this range is not expected to have any significant signal contribution. One important remark regarding this option is the statement that it is built on the fact that the dijet mass is not strongly correlated with with $min\Delta\phi(j,E_{T,miss})$ for the QCD multijet processes. This is clearly shown in the distribution $r(m_{jj})$ (from the implementation process of method A) shown in Figure~\ref{fig:qCD_A_ratio}. It displays the flat behaviour of the aforementioned ratio across the $m_{jj}$ range with sufficient statistical precision.
 
-\hspace{10pt} One important remark regarding this option is the statement that it is built on the fact that the dijet mass is not strongly correlated with with $min\Delta\phi(j,E_{T,miss})$. This is supported by the distribution $r(m_{jj})$ from the implementation process of method A, but more details about these results are given in Chapter~\ref{ch:fit}, where the background estimation is explained in more detail.
+\hspace{10pt} The final step is to translate this information into the final SR contribution in the $m_{jj}$ variable. The overall normalisation of the QCD multijet SR contribution is there, the only thing which remains is to determine the shape of the distribution. Due to the aforementioned small correlation between the two variables, this can be achieved by looking into the QCD CR and subtracting the estimated contribution of other backgrounds from data. Upon obtaining the resulting $m_{jj}$ distribution, the only thing left to do is to scale it to the proper normalisation, which in this case is represented by the value of $N_{QCD}^{SR}$. Figure~\ref{fig:qcd_diag} summarises this method in a form of a diagram.
 
-\hspace{10pt} The final step is to translate this information into the final SR contribution in the $m_{jj}$ variable. The overall normalisation of the QCD multijet SR contribution is there, the only thing which remains is to determine the shape of the distribution. Due to the aforementioned small correlation between the two variables, this can be achieved by looking into the QCD CR and subtracting the estimated contribution of other backgrounds from data. Upon obtaining the resulting $m_{jj}$ distribution, the only thing left to do is to scale it to the proper normalisation, which in this case is represented by the value of $N_{QCD}^{SR}$.
 
-\hspace{10pt} As previously mentioned, the following chapter is going to focus on the practical implementation of these CRs into the analysis flow and their associated uncertainties, serving as a companion, concluding the story of background processes from the point of view of this study.
 
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width= 0.9\textwidth]{Control_Regions/QCD_diagram.pdf}
+  \caption{Diagram showing main steps of the Method B approach to the estimation of the contribution from QCD multjet processes in the SR.}
+  \label{fig:qcd_diag}
+\end{figure}
+
+
+\hspace{10pt} Figure~\ref{fig:qcd_b_midphi_2017} shows the first step of this process - the fitting procedure of the min$\Delta \phi (j, E_{T,miss})$ variable used to extract the total yield of multijet processes in the SR (presented for the MTR category for both 2017 and 2018 data). The fit range is defined to reach min$\Delta \phi (j, E_{T,miss})<$~1 (1.5) for MTR (VTR) categories. Similarly, a validation region is introduced in order to estimate the quality of the fit. It is starts from the end of the fit range until  min$\Delta \phi (j, E_{T,miss})<$~1.2 (1.8) for MTR (VTR) categories, respectively. This was made possible as a result of studies following the unblinding strategy, which was put in place in order to mitigate the effects of jet horns and HEM problems (as described in Chapter~\ref{sec:data_quality}), with the extended range (both for the fit and validation) being supported with the assumption that no significant signal contribution is expected bellow those values. 
+
+\hspace{10pt} These distributions present data (black points), sum of minor backgrounds (blue points), multijet simulated events (red points - only for comparison, not being used anywhere) and the fit functions for the data ($F(x)$ - dashed black line), minor backgrounds ($F_{B}(x)$ - dashed blue line) and the multijet estimation ($F_{QCD}$ - dashed red line). Additionally, a sum of the contributions from minor backgrounds combined with $F_{QCD}$ is presented (solid magenta line). The bottom panel focuses on the ratios between the fit functions and their corresponding processes. This includes a comparison of $F(x)$ versus data (expressed with black color), which shows a good agreement above the fit range. Lastly, comparisons are made between the $F_{B}$ and the sum of other (non-QCD multijet) background processes (blue) as well as the $F_{QCD}$ versus multijet simulated events (red - but, similar to above, only for illustration purposes). The difference between the QCD multijet simulated events (accompanied with their large uncertainties) and the resulting $F_{QCD}$ arises due to the low statistical precision of the simulated samples~\footnote{Due to the existence of a few events originating from low statistical precision samples but having a large production cross section value.} and ultimately represents yet another indication of the necessity for this approach.
+
+\begin{figure}[htbp]
+  \centering
+    \subfigure[MTR 2017]{\includegraphics[width= 0.65\textwidth]{Results/{out_MTR_2017.root_qcdDD_normfit}.pdf}}\\
+    \subfigure[MTR 2018]{\includegraphics[width= 0.65\textwidth]{Results/{out_MTR_2018.root_qcdDD_normfit}.pdf}}
+  \caption{Extraction of the overal normalisation of the SR contribution originating from QCD multijet processes obtained through the use of Method B for the MTR category for (a) 2017 and (b) 2018 data.}
+  \label{fig:qcd_b_midphi_2017}
+\end{figure}
+
+
+
+\hspace{10pt} As previously mentioned, the following chapter is going to focus on the practical implementation of these CRs into the analysis flow and their associated uncertainties, serving as a companion by concluding the story of background processes from the point of view of this study.
